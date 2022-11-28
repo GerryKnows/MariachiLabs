@@ -1,6 +1,6 @@
 .red {
     background-color: red;
-    margin-right:  10%;
+    
 }
 
 .banner {
@@ -43,6 +43,49 @@
 
 }
 
-.que-somos h1 {
+.serv {
+
+    text-align:center;
+    margin-top: 4rem;
+    padding-left: auto;
+    padding-right: auto;
 
 }
+
+.made-in {
+    
+}
+
+.made-in .m1 {
+    background-image: url("img/achieving-success-in-web-development.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 30rem;
+  
+}
+
+.made-in .m2 {
+    background-image: url("img/analyst-of-coding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 30rem;
+  
+}
+
+.made-in .m3 {
+    background-image: url("img/custom-soft-fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 30rem;
+  
+}
+
+.icon-services {
+    width: 70%;
+}
+
+
+
