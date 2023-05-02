@@ -1,46 +1,90 @@
-.red {
-    background-color: red;
-    
+:root {
+    --primaryPink: #D81159;
+    --secondaryPink: #882D53;
+    --black: #000000;
+    --white: #fff;
 }
 
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Mono', monospace;
+    color: var(--black);
+}
+/* UTILITIES */
+/*Font color accents*/
+.pink-accent-bold {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--primaryPink);
+    font-weight: bolder;
+}
+.pink-accent-regular {
+    color: var(--primaryPink);
+    
+}
+/*Buttons*/
+.button-shape {
+    height: 4.5rem;
+    width: 23rem;
+    border: none;
+    border-radius: 4.5rem;
+    font-size: 1.5rem;
+}
+/*Banner Section*/
 .banner {
     width: 100%;
-    height: 500px;
+    height: 72rem;
     background-image: url("img/custom-soft-fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     position: relative;
-    z-index: 0;  
+    z-index: 0;
+}
+.banner h1 {
+    font-size: 3rem;
+    color: var(--white );
+}
+.banner img {
+    height: 25rem;
+    margin: 0 auto;
 }
 
-.banner-content {
-    position: absolute;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+
+.contact-button {
+    color: var(--primaryPink);
+    background-color: var(--white);
+}
+.consultancy-button {
+    color: var(--white);
+    background-color: var(--primaryPink);
 }
 
-.info-banner {
-    color: white;
-    position: absolute;
-    z-index: 2;
-    top: 12rem;
-}
-
- .banner .banner-content img {
-   position: absolute;
-   z-index: 1;
-   right: 1px;
-   height: 500px;
-}
-
+/*Que somos section*/
 .que-somos {
     text-align:center;
     margin-top: 4rem;
-    padding-left: 25%;
-    padding-right: 25%;
-
+    margin-bottom: 8rem;
+    width: 34rem;
+    font-size: 3.4rem;
+}
+.que-somos-logo {
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+.que-somos p {
+    font-size: 2.4rem;
+}
+.que-somos figure {
+    margin-bottom: 8rem;
+}
+.services-description {
+    width: 34rem;
+    font-size: 3.4rem;
 }
 
 .serv {
