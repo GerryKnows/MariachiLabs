@@ -9,17 +9,18 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- PT font Bayon Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Mono&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
-  
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light h3">
         <div class="container-fluid">
             <a class="navbar-brand offset-1" href="#">
-                <img src="icons/mariachi-final.svg" alt="" width="50" height="24">
-                <img src="icons/mariachilabs.svg" alt="" width="110" height="24">
+                <img src="icons/mariachi-final.svg" alt="" width="50" height="34">
+                <img src="icons/mariachilabs.svg" alt="" width="110" height="34">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,19 +34,19 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu h4" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Startups</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Empresarial</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Planing</a></li>
+                  <li><a class="dropdown-item" href="#">Planning</a></li>
                 </ul>
               </li>
               <li class="nav-item active">         
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">         
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contáctanos</a>
               </li>
               <li class="nav-item">         
                 <a class="nav-link" href="#">En</a>
@@ -53,65 +54,62 @@
             </ul>
           </div>
         </div>
-    </nav>
-
-    
+    </nav> 
 
     <main>
-
-      <section>
-        <div class="banner">
-          <div class="banner-content ">
-            <div class="info-banner">
-              <h1>Custom Software Solutions</h1>
-              <button>Contáctanos</button>
-              <button>Asesoría Gratuita</button>
-            </div>
-            <img src="img/iphone_12.png" alt="">
-          </div>
-        </div> 
-      </section>
-
-
-
-
-      <section class="que-somos">
-            <h4>
-              What is Mariachi?
-            </h4>
-            
-            <h1>
-              Nuestros servicios de desarrollo 
-              y diseño de software se enfocan 
-              en producir las mejores soluciones 
-              posibles para tu empresa.
-            </h1>
-      </section>
-
-      <section>
-
-        <div class="container mt-3 ">
-          <div class="row">
-            <div class="col-4 serv red ">
-              <img src="icons/interfaz.png" alt="">
-              <h4>Interfaz de usuario atractiva</h4>
-            </div>
-            
-            <div class="col-4 serv">
-              <img src="icons/rapida.png" alt="">
-              <h4>Carga rápida, eficiente y mejoramiento de posicionamiento CEO</h4>
-            </div>
-
-            <div class="col-4 serv">
-              <img src="icons/ux.png" alt="">
-              <h4>Exelente experiencia de usuario</h4>
-            </div>
-          </div>
+      <section class="
+      banner
+        text-center
+        d-flex flex-column
+        flex-md-row
+        justify-content-center
+        mx-auto">
+        <h1 class="text-center mb-5">Custom Software Solutions</h1>
+        <img class="mb-5" src="img/iphone_12.png" alt="smartphone_image">
+        <div class="banner-buttons">
+          <button class="button-shape contact-button mb-4">Contáctanos</button>
+          <button class="button-shape consultancy-button">Asesoría Gratuita</button>
         </div>
       </section>
 
+      <section class="que-somos mx-auto">
+          <figure>
+            <img class="que-somos-logo" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
+            <figcaption>What is <span class="pink-accent-bold">Mariachi</span>?</figcaption>
+          </figure>
+            <p>
+              Nuestros servicios de <span class="pink-accent-bold">desarrollo</span>
+              y <span class="pink-accent-bold">diseño</span> de software se enfocan 
+              en <span class="pink-accent-regular">producir las mejores soluciones 
+              posibles</span> para tu empresa.
+            </p>
+      </section>
 
-      <section class=" container made-in col-10  mt-5">
+      <section class="
+      services-description
+
+      d-flex flex-column
+      flex-md-row
+      justify-content-center
+      mx-auto">
+            <figure class="text-center">
+              <img src="icons/interfaz.png" alt="">
+              <figcaption>Interfaz de usuario <span class="pink-accent-regular">atractiva</span></figcaption>
+            </figure>
+            
+            <figure class="text-center">
+              <img src="icons/rapida.png" alt="">
+              <figcaption>Carga <span class="pink-accent-regular">rápida</span>, eficiente y mejoramiento de posicionamiento SEO</figcaption>
+            </figure>
+
+            <figure class="text-center">
+              <img src="icons/ux.png" alt="">
+              <figcaption><span class="pink-accent-regular">Excelente</span> experiencia de usuario</figcaption>
+            </figure>
+      </section>
+
+
+      <!-- <section class=" container made-in col-10  mt-5">
 
         <div class="row">
           <div class="col-3">
@@ -184,7 +182,7 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
 
       
