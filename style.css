@@ -26,6 +26,15 @@ body {
     color: var(--primaryPink);
     
 }
+.secondary-pink-accent-bold {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondaryPink);
+    font-weight: bolder;
+}
+.secondary-pink-accent-regular {
+    color: var(--secondaryPink);
+    
+}
 /*Buttons*/
 .button-shape {
     height: 4.5rem;
@@ -33,6 +42,9 @@ body {
     border: none;
     border-radius: 4.5rem;
     font-size: 1.5rem;
+}
+.button-shape:hover {
+    opacity: .7;
 }
 /*Banner Section*/
 .banner {
@@ -55,11 +67,12 @@ body {
 }
 
 
-.contact-button {
+.contact-banner-button {
     color: var(--primaryPink);
     background-color: var(--white);
 }
-.consultancy-button {
+.consultancy-button,
+.contact-madein-button {
     color: var(--white);
     background-color: var(--primaryPink);
 }
@@ -69,7 +82,8 @@ body {
     text-align:center;
     margin-top: 4rem;
     margin-bottom: 8rem;
-    width: 34rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     font-size: 3.4rem;
 }
 .que-somos-logo {
@@ -83,48 +97,52 @@ body {
     margin-bottom: 8rem;
 }
 .services-description {
+    margin: 12rem auto;
     width: 34rem;
     font-size: 3.4rem;
 }
 
-.serv {
-
-    text-align:center;
-    margin-top: 4rem;
-    padding-left: auto;
-    padding-right: auto;
-
-}
-
+/* Made in Mariachi section*/
 .made-in {
-    
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin: 4rem auto;
 }
-
-.made-in .m1 {
-    background-image: url("img/achieving-success-in-web-development.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 30rem;
-  
+.made-in h2 {
+    font-size: 5rem;
 }
-
-.made-in .m2 {
-    background-image: url("img/analyst-of-coding.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 30rem;
-  
+.made-in p {
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+    margin: 4rem 0;
 }
-
-.made-in .m3 {
-    background-image: url("img/custom-soft-fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 30rem;
-  
+/*Carousel*/
+.slide img{
+    height: 46rem;
+    object-fit: cover;
+}
+.carousel-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--black);
+    opacity: 1;
+    border-radius: 50%;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: .7;
+}
+.contact-madein-button {
+    margin-top: 3rem;
 }
 
 .icon-services {
