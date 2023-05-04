@@ -46,6 +46,10 @@ body {
 .button-shape:hover {
     opacity: .7;
 }
+.icon-size {
+    object-fit: cover;
+    width: 100%;
+}
 /*Banner Section*/
 .banner {
     width: 100%;
@@ -72,7 +76,8 @@ body {
     background-color: var(--white);
 }
 .consultancy-button,
-.contact-madein-button {
+.contact-madein-button,
+.consultancy-our-services-button {
     color: var(--white);
     background-color: var(--primaryPink);
 }
@@ -91,19 +96,22 @@ body {
     margin-bottom: 2rem;
 }
 .que-somos p {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 .que-somos figure {
     margin-bottom: 8rem;
 }
-.services-description {
+
+.services-description,
+.our-services {
     margin: 12rem auto;
     width: 34rem;
-    font-size: 3.4rem;
+    font-size: 2rem;
 }
 
 /* Made in Mariachi section*/
-.made-in {
+.made-in, 
+.our-services {
     width: 100%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -143,11 +151,12 @@ body {
 }
 .contact-madein-button {
     margin-top: 3rem;
+    margin-bottom: 7rem;
 }
 
-.icon-services {
-    width: 70%;
+.our-services h2 {
+    font-size: 3.5rem;
 }
-
-
-
+.consultancy-our-services-button {
+    margin-top: 12rem;
+}
