@@ -33,6 +33,11 @@ body {
 }
 .secondary-pink-accent-regular {
     color: var(--secondaryPink);
+}
+.black-accent-bold {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--black);
+    font-weight: bolder;
     
 }
 /*Buttons*/
@@ -49,6 +54,7 @@ body {
 .icon-size {
     object-fit: cover;
     width: 100%;
+    margin: 3rem auto;
 }
 /*Banner Section*/
 .banner {
@@ -105,17 +111,16 @@ body {
 .services-description,
 .our-services {
     margin: 12rem auto;
-    width: 34rem;
+    width: 30rem;
     font-size: 2rem;
 }
 
 /* Made in Mariachi section*/
-.made-in, 
-.our-services {
+.made-in {
     width: 100%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    margin: 4rem auto;
+    margin: 8rem auto;
 }
 .made-in h2 {
     font-size: 5rem;
@@ -155,7 +160,14 @@ body {
 }
 
 .our-services h2 {
+    font-size: 2.1rem;
+}
+.our-services span {
     font-size: 3.5rem;
+}
+.our-services figcaption,
+.our-services figcaption span {
+    font-size: 2.3rem;
 }
 .consultancy-our-services-button {
     margin-top: 12rem;
