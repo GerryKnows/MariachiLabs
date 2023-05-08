@@ -23,8 +23,7 @@ body {
     font-weight: bolder;
 }
 .pink-accent-regular {
-    color: var(--primaryPink);
-    
+    color: var(--primaryPink);  
 }
 .secondary-pink-accent-bold {
     font-family: 'Bebas Neue', sans-serif;
@@ -177,4 +176,27 @@ body {
 }
 .consultancy-our-services-button {
     margin-top: 12rem;
+}
+
+/*Footer*/
+.footer-dropdown {
+    font-size: 1.5rem;
+}
+.accordion {
+    --bs-accordion-active-bg: var(--primaryPink);
+    --bs-accordion-active-color: var(--white);
+    --bs-accordion-border-color: none;
+}
+.accordion-item {
+    --bs-accordion-border-color: none;
+    --bs-accordion-active-border-color: none;
+}
+
+.accordion-button {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+.dropdown-item a {
+    text-decoration: none;
+    color: var(--black);
 }
