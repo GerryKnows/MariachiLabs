@@ -50,6 +50,12 @@ body {
 .button-shape:hover {
     opacity: .7;
 }
+.button-shape-wrap {
+    width: fit-content;
+}
+.button-shape-wrap div{
+    margin: 0 2rem;
+}
 .thumbnail-size {
     object-fit: cover;
     width: 100%;
@@ -86,7 +92,8 @@ body {
     color: var(--white);
     background-color: var(--primaryPink);
 }
-.learn-more-button {
+.learn-more-button,
+.signup-button {
     color: var(--white);
     background-color: var(--black);
 }
@@ -199,4 +206,15 @@ body {
 .dropdown-item a {
     text-decoration: none;
     color: var(--black);
+}
+.footer-links {
+    margin: 4rem auto;
+    width: 34rem;
+    font-size: 2rem;
+}
+.footer-links h2 {
+    font-size: 3.5rem;
+}
+.footer-links p {
+    font-size: 1.2rem;
 }
