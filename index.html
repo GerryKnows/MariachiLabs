@@ -108,11 +108,15 @@
       </section>
 
       <section class="made-in
-      d-flex flex-column 
+      d-flex flex-column flex-md-row
       align-items-center">
-        <h2 class="secondary-pink-accent-bold
-        align-self-start">Hecho en<br>mariachi.</h2>
-        <p>Descubre la cantidad de opciones que tenemos para ti, <span class="secondary-pink-accent-regular">sómos tu solución integral.</span></p>
+        <div>
+          <h2 class="secondary-pink-accent-bold
+          align-self-start">Hecho en<br>mariachi.</h2>
+          <p>Descubre la cantidad de opciones que tenemos para ti, <span class="secondary-pink-accent-regular">sómos tu solución integral.</span></p>
+          <!-- Desktop contact us button -->
+          <button class="button-shape contact-madein-button d-none d-md-block">¡Contáctanos!</button>
+        </div>
         <!-- Carousel -->
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
           <div class="carousel-inner">
@@ -137,7 +141,9 @@
             </button>
           </div>
         </div>
-        <button class="button-shape contact-madein-button">¡Contáctanos!</button>
+        <!-- Mobile contact us button -->
+        <button class="button-shape contact-madein-button d-sm-block d-md-none">¡Contáctanos!</button>
+        
       </section>
       <!-- Interested on our services -->
       <section class="container text-center services">
