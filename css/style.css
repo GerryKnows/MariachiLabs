@@ -202,9 +202,10 @@ body {
 .services > h2,
 .software-trends h2 {
     font-size: 3.4rem;
+    margin-bottom: 0rem;
 }
 .our-services span {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
 }
 .our-services figcaption,
 .our-services figcaption span {
