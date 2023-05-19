@@ -70,6 +70,17 @@ body {
     width: 100%;
     margin: 3rem auto;
 }
+.thumbnail-size-trends {
+    width: 10rem;
+    height: 20rem;
+    overflow: hidden;
+    margin: 3rem auto;
+}
+.thumbnail-size-trends {
+    object-fit: cover;
+    width: 24rem;
+    height: 20rem;
+}
 /*Banner Section*/
 .banner {
     width: 100%;
@@ -119,6 +130,10 @@ body {
 .signup-button {
     color: var(--white);
     background-color: var(--black);
+    @media (min-width: 768px) {
+        color: var(--white);
+        background-color: var(--primaryPink)
+    }
 }
 
 /*Que somos section*/
@@ -202,10 +217,10 @@ body {
 .services > h2,
 .software-trends h2 {
     font-size: 3.4rem;
-    margin-bottom: 0rem;
+    margin-bottom: 10rem;
 }
 .our-services span {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
 }
 .our-services figcaption,
 .our-services figcaption span {
