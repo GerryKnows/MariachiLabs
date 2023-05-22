@@ -46,7 +46,6 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--black);
     font-weight: bolder;
-    
 }
 /*Buttons*/
 .button-shape {
@@ -89,25 +88,16 @@ body {
     height: 100vh;
     padding: 30% 10%;
     
-    background-image: url("../img/custom-soft-fondo.png");
+    background-image: url("../img/banner-bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 
-    display: flex;
-    flex-direction: column;
-    
     @media (min-width: 768px) {
-        flex-direction: row;
+        background-image: url("../img/banner-bg-desktop.png");
     }
 }
 .banner-elements {
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 1;
 
     @media (min-width: 768px) {
         justify-content: center;
