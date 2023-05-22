@@ -65,16 +65,18 @@ body {
 .button-shape-wrap div{
     margin: 0 2rem;
 }
-.thumbnail-size {
+.thumbnail-size-interested {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     margin: 3rem auto;
 }
-.thumbnail-size-trends {
-    width: 10rem;
-    height: 20rem;
-    overflow: hidden;
+.thumbnail-size-ideas {
+    object-fit: cover;
+    max-width: 100%;
     margin: 3rem auto;
+    @media (min-width: 768px) {
+        max-width: 60rem;
+    }
 }
 .thumbnail-size-trends {
     object-fit: cover;
@@ -294,6 +296,13 @@ footer {
         }
         & hr {
             display: none;
+        }
+    }
+
+    .services-description div figcaption {
+        font-size: 4rem;
+        & span {
+            font-size: 4rem;
         }
     }
   }
