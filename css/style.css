@@ -175,9 +175,11 @@ body {
 /* Made in Mariachi section*/
 .made-in {
     width: 100%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 2.5rem;
     margin: 8rem auto;
+    @media (min-width: 768px) {
+        padding-left: 10rem;
+    }
 }
 .made-in h2 {
     font-size: 5rem;
@@ -191,6 +193,7 @@ body {
 .slide img{
     height: 46rem;
     object-fit: cover;
+    overflow: hidden;
 }
 .carousel-controls {
     display: flex;
