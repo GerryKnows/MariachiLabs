@@ -236,29 +236,48 @@ body {
 /*Footer*/
 .footer-dropdown {
     font-size: 1.5rem;
+    @media (min-width: 768px) {
+        margin: 0 3rem;
+    }
 }
 .accordion {
     --bs-accordion-active-bg: var(--primaryPink);
     --bs-accordion-active-color: var(--white);
     --bs-accordion-border-color: none;
+    font-family: 'Inter';
+    @media (min-width: 768px) {
+        font-size: 1.2rem
+    }
+}
+.accordion-header p {
+    font-size: 1.2rem;
 }
 .accordion-item {
     --bs-accordion-border-color: none;
     --bs-accordion-active-border-color: none;
+    @media (min-width: 768px) {
+        margin: 0 3rem;
+    }
 }
-
 .accordion-button {
     font-size: 1.6rem;
     padding-left: 2rem;
 }
+
 .dropdown-item a {
     text-decoration: none;
     color: var(--black);
+}
+footer {
+    padding: 5rem;
 }
 .footer-links {
     margin: 4rem auto;
     width: 34rem;
     font-size: 2rem;
+    @media (min-width: 768px) {
+        margin: 0 auto;
+    }
 }
 .footer-links h2 {
     font-size: 3.5rem;
@@ -268,7 +287,13 @@ body {
 }
 
 @media (min-width: 768px) {
-    .custom-heading {
-      margin: auto;
+    .accordion-body {
+        padding: 0;
+        & ul {
+              padding: 0;
+        }
+        & hr {
+            display: none;
+        }
     }
   }

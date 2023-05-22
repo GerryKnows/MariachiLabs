@@ -12,8 +12,9 @@
     <!-- PT font Bayon Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=PT+Mono&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -235,17 +236,18 @@
       </div>
     </section>
     <!-- Footer -->
-    <section class="footer-dropdown">
+    <section class="footer-dropdown d-md-flex">
       <!-- <<About Mariachi -->
       <div class="accordion" id="accordionAboutMariachi">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutMariachi" aria-expanded="true" aria-controls="collapseAboutMariachi">
               About Mariachi
             </button>
+            <p class="d-none d-md-block pink-accent-regular">About Mariachi</p>
           </h2>
 
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAboutMariachi">
+          <div id="collapseAboutMariachi" class="collapse d-md-block" data-bs-parent="#accordionAboutMariachi">
             <div class="accordion-body">
               <ul>
                 <li class="dropdown-item"><a href="#">About</a></li>
@@ -269,29 +271,29 @@
         </div>
       </div><!-- >>About Mariachi -->
 
+      <div> <!--Separator-->
       <!-- <<Products -->
       <div class="accordion" id="accordionProducts">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
               Products
             </button>
+            <p class="d-none d-md-block pink-accent-regular">Products</p>
           </h2>
 
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionProducts">
+          <div id="collapseProducts" class="collapse d-md-block" data-bs-parent="#accordionProducts">
             <div class="accordion-body">
               <ul>
-                <li class="dropdown-item text-wrap"><a href="#">Desarollo de aplicaciones móviles (iOS y Android)</a></li>
+                <li class="dropdown-item"><a href="#">Desarrollo de aplicaciones móviles (iOS y Android)</a></li>
                 <hr>
-                <li class="dropdown-item"><a href="#">Desarrollo web</a></li>
+                <li class="dropdown-item"><a href="#">Desarollo web</a></li>
                 <hr>
                 <li class="dropdown-item"><a href="#">Comercio electrónico</a></li>
                 <hr>
-                <li class="dropdown-item"><a href="#">Leadership</a></li>
+                <li class="dropdown-item"><a href="#">Desarrollo de aplicaciones multiplataforma</a></li>
                 <hr>
-                <li class="dropdown-item text-wrap"><a href="#">Desarrollo de aplicaciones multiplataforma</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Diseño de UX/UI</a></li>
+                <li class="dropdown-item"><a href="#">Diseño UX/UI</a></li>
               </ul>
             </div>
           </div>
@@ -299,20 +301,21 @@
       </div><!-- >>Products -->
 
       <!-- <<Policies -->
-      <div class="accordion" id="accordionPolicies">
+      <div class="accordion" id="accordionAboutPolicies">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicies" aria-expanded="true" aria-controls="collapsePolicies">
               Policies
             </button>
+            <p class="d-none d-md-block pink-accent-regular">Policies</p>
           </h2>
-
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPolicies">
+          
+          <div id="collapsePolicies" class="collapse d-md-block" data-bs-parent="#accordionAboutPolicies">
             <div class="accordion-body">
               <ul>
                 <li class="dropdown-item"><a href="#">Legal</a></li>
                 <hr>
-                <li class="dropdown-item"><a href="#">Accessibility</a></li>
+                <li class="dropdown-item"><a href="#">Accesibility</a></li>
                 <hr>
                 <li class="dropdown-item"><a href="#">Privacy Policy</a></li>
               </ul>
@@ -320,10 +323,9 @@
           </div>
         </div>
       </div><!-- >>Policies -->
+      </div><!--Separator-->
       
-      <div class="footer-links
-      
-      d-flex flex-column">
+      <div class="footer-links">
       <h2 class="pink-accent-bold mb-4">Stay in the know — we'll send you offers & more.</h2>
       <button class="button-shape button-shape-wrap signup-button mb-5">
         <div>Sign Up</div>
@@ -343,11 +345,9 @@
       </div>
     </section>
     </main>
-    <footer class=" footer-links
-
-    d-flex flex-column mb-4">
+    <footer class="d-flex flex-column flex-md-row mb-4 mt-5 justify-content-between">
       <p class="fw-bold">© 2022 Mariachi Labs. All rights reserved.</p>
-      <p>10855 Enrrique Segoviano, MX 84095</p>
+      <p>10855 Enrique Segoviano, MX 84095</p>
     </footer>
 </body>
 </html>
