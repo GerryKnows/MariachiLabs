@@ -3,6 +3,14 @@
     --secondaryPink: #882D53;
     --black: #000000;
     --white: #fff;
+    --mobile: 768px;
+}
+@font-face {
+    font-family: 'Swiss';
+    font-style: normal;
+    src: url('/fonts/Swiss.ttf') format('truetype'),
+    url('/fonts/Swiss.otf') format('opentype'),
+    url('/fonts/Swiss.woff') format('woff');
 }
 
 html {
@@ -12,18 +20,10 @@ html {
 }
 
 body {
-    font-family: 'PT Mono', monospace;
+    font-family: 'PT mono', monospace;
     color: var(--black);
 }
 /* UTILITIES */
-@font-face {
-    font-family: 'Swiss';
-    font-style: normal;
-    src: url('../fonts/Swiss.ttf'), format('truetype');
-}
-.swiss{
-    font-family:'Swiss';
-}
 /*Font color accents*/
 .pink-accent-bold {
     font-family: 'Bebas Neue', sans-serif;
@@ -45,7 +45,6 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--black);
     font-weight: bolder;
-    
 }
 /*Buttons*/
 .button-shape {
@@ -54,6 +53,8 @@ body {
     border: none;
     border-radius: 4.5rem;
     font-size: 1.5rem;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .button-shape:hover {
     opacity: .7;
@@ -64,31 +65,43 @@ body {
 .button-shape-wrap div{
     margin: 0 2rem;
 }
-.thumbnail-size {
+.thumbnail-size-interested {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     margin: 3rem auto;
+}
+.thumbnail-size-ideas {
+    object-fit: cover;
+    max-width: 100%;
+    margin: 3rem auto;
+    @media (min-width: 768px) {
+        max-width: 60rem;
+    }
+}
+.thumbnail-size-trends {
+    object-fit: cover;
+    width: 24rem;
+    height: 20rem;
 }
 /*Banner Section*/
 .banner {
     width: 100%;
-    height: 72rem;
-    background-image: url("../img/custom-soft-fondo.png");
+    height: 100vh;
+    padding: 30% 10%;
+    
+    background-image: url("../img/banner-bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    position: relative;
-    z-index: 0;
+
+    @media (min-width: 768px) {
+        background-image: url("../img/banner-bg-desktop.png");
+    }
 }
 .banner h1 {
     font-size: 3rem;
-    color: var(--white );
+    color: var(--white);
 }
-.banner img {
-    height: 25rem;
-    margin: 0 auto;
-}
-
 
 .contact-banner-button {
     color: var(--primaryPink);
@@ -104,6 +117,12 @@ body {
 .signup-button {
     color: var(--white);
     background-color: var(--black);
+    font-family: 'Swiss';
+    font-weight: 400;
+    @media (min-width: 768px) {
+        color: var(--white);
+        background-color: var(--primaryPink)
+    }
 }
 
 /*Que somos section*/
@@ -111,35 +130,43 @@ body {
     text-align:center;
     margin-top: 4rem;
     margin-bottom: 8rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0 2.5rem;
     font-size: 3.4rem;
+    @media (min-width: 768px) {
+        padding: 0 20rem;
+    }
 }
 .que-somos-logo {
-    width: 15rem;
+    width: 12rem;
     margin-bottom: 2rem;
 }
 .que-somos p {
     font-size: 2rem;
 }
 .que-somos figure {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .services-description,
 .our-services,
 .software-trends {
-    margin: 12rem auto;
+    margin: 10rem auto;
     width: 30rem;
     font-size: 2rem;
+    
+    @media (min-width: 768px) {
+        width: 85%;
+    }
 }
 
 /* Made in Mariachi section*/
 .made-in {
     width: 100%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 2.5rem;
     margin: 8rem auto;
+    @media (min-width: 768px) {
+        padding-left: 10rem;
+    }
 }
 .made-in h2 {
     font-size: 5rem;
@@ -153,6 +180,7 @@ body {
 .slide img{
     height: 46rem;
     object-fit: cover;
+    overflow: hidden;
 }
 .carousel-controls {
     display: flex;
@@ -181,6 +209,7 @@ body {
 .services > h2,
 .software-trends h2 {
     font-size: 3.4rem;
+    margin-bottom: 10rem;
 }
 .our-services span {
     font-size: 3.5rem;
@@ -199,29 +228,48 @@ body {
 /*Footer*/
 .footer-dropdown {
     font-size: 1.5rem;
+    @media (min-width: 768px) {
+        margin: 0 3rem;
+    }
 }
 .accordion {
     --bs-accordion-active-bg: var(--primaryPink);
     --bs-accordion-active-color: var(--white);
     --bs-accordion-border-color: none;
+    font-family: 'Inter';
+    @media (min-width: 768px) {
+        font-size: 1.2rem
+    }
+}
+.accordion-header p {
+    font-size: 1.2rem;
 }
 .accordion-item {
     --bs-accordion-border-color: none;
     --bs-accordion-active-border-color: none;
+    @media (min-width: 768px) {
+        margin: 0 3rem;
+    }
 }
-
 .accordion-button {
     font-size: 1.6rem;
     padding-left: 2rem;
 }
+
 .dropdown-item a {
     text-decoration: none;
     color: var(--black);
+}
+footer {
+    padding: 5rem;
 }
 .footer-links {
     margin: 4rem auto;
     width: 34rem;
     font-size: 2rem;
+    @media (min-width: 768px) {
+        margin: 0 auto;
+    }
 }
 .footer-links h2 {
     font-size: 3.5rem;
@@ -229,3 +277,22 @@ body {
 .footer-links p {
     font-size: 1.2rem;
 }
+
+@media (min-width: 768px) {
+    .accordion-body {
+        padding: 0;
+        & ul {
+              padding: 0;
+        }
+        & hr {
+            display: none;
+        }
+    }
+
+    .services-description div figcaption {
+        font-size: 4rem;
+        & span {
+            font-size: 4rem;
+        }
+    }
+  }
