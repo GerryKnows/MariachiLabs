@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mariachi Labs</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- PT font Bayon Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=PT+Mono&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand offset-1" href="#">
-                <img src="icons/mariachi-final.svg" alt="" width="50" height="24">
-                <img src="icons/mariachilabs.svg" alt="" width="110" height="24">
+                <img src="icons/mariachi-final.svg" alt="" width="50" height="34">
+                <img src="icons/mariachilabs.svg" alt="" width="110" height="34">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,19 +35,19 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu h4" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Startups</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Empresarial</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Planing</a></li>
+                  <li><a class="dropdown-item" href="#">Planning</a></li>
                 </ul>
               </li>
               <li class="nav-item active">         
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">         
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contáctanos</a>
               </li>
               <li class="nav-item">         
                 <a class="nav-link" href="#">En</a>
@@ -53,146 +55,311 @@
             </ul>
           </div>
         </div>
+<<<<<<< HEAD
     </nav>
+=======
+    </nav> 
+>>>>>>> a89c04593f2f8755628f302152f6b4609255b696
 
     <main>
-
-      <section>
-        <div class="banner">
-          <div class="banner-content ">
-            <div class="info-banner">
-              <h1>Custom Software Solutions</h1>
-              <button>Contáctanos</button>
-              <button>Asesoría Gratuita</button>
-            </div>
-            <img src="img/iphone_12.png" alt="">
-          </div>
-        </div> 
-      </section>
-
-
-
-
-      <section class="que-somos">
-            <h4>
-              What is Mariachi?
-            </h4>
-            
-            <h1>
-              Nuestros servicios de desarrollo 
-              y diseño de software se enfocan 
-              en producir las mejores soluciones 
-              posibles para tu empresa.
-            </h1>
-      </section>
-
-      <section>
-
-        <div class="container mt-3 ">
-          <div class="row">
-            <div class="col-4 serv red ">
-              <img src="icons/interfaz.png" alt="">
-              <h4>Interfaz de usuario atractiva</h4>
-            </div>
-            
-            <div class="col-4 serv">
-              <img src="icons/rapida.png" alt="">
-              <h4>Carga rápida, eficiente y mejoramiento de posicionamiento CEO</h4>
-            </div>
-
-            <div class="col-4 serv">
-              <img src="icons/ux.png" alt="">
-              <h4>Exelente experiencia de usuario</h4>
-            </div>
+      <!-- Banner section -->
+      <section class="banner d-flex flex-row">
+        <div class="d-flex flex-column text-center h-100 justify-content-between justify-content-md-center">
+          <h1 class="">Custom Software Solutions</h1>
+          <img class="d-md-none w-100" src="img/iphone_12.png" alt="phone_image">
+          <div>
+            <button class="button-shape contact-banner-button mb-4">Contáctanos</button>
+            <button class="button-shape consultancy-button">Asesoría Gratuita</button>
           </div>
         </div>
       </section>
 
+      <section class="que-somos mx-auto">
+          <figure>
+            <img class="que-somos-logo" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
+            <figcaption>What is <span class="pink-accent-bold">Mariachi</span>?</figcaption>
+          </figure>
+            <p>
+              Nuestros servicios de <span class="pink-accent-bold">desarrollo</span>
+              y <span class="pink-accent-bold">diseño</span> de software se enfocan 
+              en <span class="pink-accent-regular">producir las mejores soluciones 
+              posibles</span> para tu empresa.
+            </p>
+      </section>
 
-      <section class=" container made-in col-10  mt-5">
+      <section class="
+      services-description
 
-        <div class="row">
-          <div class="col-3">
-            <h3>Hecho en Mariachi</h3>
-            <p>Descubre la cantidad de opciones que tenemos para ti, sómos tu solucón integral.</p>
-            <button>¡contáctanos!</button>
-          </div>
-          <div class="col-3 m1"></div>
-          <div class="col-3 m2"></div>
-          <div class="col-3 m3"></div>
+      d-flex flex-column
+      flex-md-row justify-content-between">
+            <figure class="col-md-4 text-center">
+              <img src="icons/iconos_interfaz.png" alt="">
+              <figcaption>Interfaz de usuario <span class="pink-accent-regular">atractiva</span></figcaption>
+            </figure>
+            
+            <figure class="col-md-4 text-center">
+              <img src="icons/iconos_rapida.png" alt="">
+              <figcaption>Carga <span class="pink-accent-regular">rápida</span>, eficiente y mejoramiento de posicionamiento SEO</figcaption>
+            </figure>
+
+            <figure class="col-md-4 text-center">
+              <img src="icons/iconos_ux.png" alt="">
+              <figcaption><span class="pink-accent-regular">Excelente</span> experiencia de usuario</figcaption>
+            </figure>
+      </section>
+
+      <section class="made-in
+      d-flex flex-column flex-md-row
+      align-items-center">
+        <div>
+          <h2 class="secondary-pink-accent-bold
+          align-self-start">Hecho en<br>mariachi.</h2>
+          <p>Descubre la cantidad de opciones que tenemos para ti, <span class="secondary-pink-accent-regular">sómos tu solución integral.</span></p>
+          <!-- Desktop contact us button -->
+          <button class="button-shape contact-madein-button d-none d-md-block">¡Contáctanos!</button>
         </div>
+        <!-- Images non-Carousel -->
+        <div class="slide d-none d-lg-flex col-md-6 gap-4 ">
+          <img src="img/achieving-success-in-web-development.jpg" alt="">
+          <img src="img/analyst-of-coding.jpg" alt="">
+          <img src="img/custom-soft-fondo.png" alt="">
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleRide" class="carousel slide d-md-none" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/analyst-of-coding.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/custom-soft-fondo.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile contact us button -->
 
-      </section>
-
-      <section class="que-somos">
-        <h2>
-          ¿Interesado en Nuestros servicios?
-        </h2>
-      </section>
-
-
-
-      <section class="container">
+        <button class="button-shape contact-madein-button d-sm-block d-md-none">¡Contáctanos!</button>
         
-          <div class="row">
-            <div class="col-4 serv red ">
-              <img class="icon-services" src="img/Cartoon-Rocket-With-Flame.H02.png" alt="">
-              <h4>Interfaz de usuario atractiva</h4>
-            </div>
-
-            <div class="col-4 serv">
-              <img class="icon-services" src="img/Smartphone-With-Shopping-Bags.H03.png" alt="">
-              <h4>Carga rápida, eficiente y mejoramiento de posicionamiento CEO</h4>
-            </div>
-
-            <div class="col-4 serv">
-              <img class="icon-services" src="img/Basketball-Coaching-Board-With-Game-Plan.I02.png" alt="">
-              <h4>Exelente experiencia de usuario</h4>
-            </div>
-
-          </div>
-
-          <div class="container">
-            <div class="serv">
-              <button>
-                Asesoría Gratuita
-              </button>
-            </div>
-          </div>
-          <section class="que-somos">
-            <h2>
-              ¡De la idea a la práctica!,
-              Cónoce nuestro proceso:
-            </h2>
-          </section>
-
       </section>
-      
-      <section>
+      <!-- Interested on our services -->
+      <section class="container text-center services p-4">
+        <h2>¿<span class="pink-accent-bold">Interesado</span> en nuestros servicios?</h2>
+        <div class="row">
+          <div class="col-md-4">
+              <img class="thumbnail-size-interested" src="img/ourServices/1-rocket.png" alt="">
+              <div class="description">Desarollo de aplicaciones para Startups</div>
+          </div>
+          <div class="col-md-4">
+              <img class="thumbnail-size-interested" src="img/ourServices/2-bagSmartPhone.png" alt="">
+              <div class="description">Software y Aplicaciones Empresariales</div>
+          </div>
+          <div class="col-md-4">
+              <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
+              <div class="description">Planeación y Estrategia de Producto</div>
+          </div>
+        </div>
+        <button class="button-shape consultancy-our-services-button">Asesoría Gratuita</button>
+      </section>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-6 red ">
-              <h2>1. Investigación y definición de objetivos.</h2>
-              <p>Escuchamos tus ideas, requisitos y expectativas, ya que tus necesidades son nuestra prioridad.</p>
-            </div>
-            <div class="col-6">
-              <img class="icon-services" src="img/Smartphone-With-Shopping-Bags.H03.png" alt="">
+      <!-- From idea to practice -->
+      <section class="our-services services-description align-items-center">
+        <h2 class="text-center fs-1 mb-5"><span class="pink-accent-bold">¡De la idea a la práctica! <br> </span>Conoce nuestro proceso:</h2>
+        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center">
+          <img class="thumbnail-size-ideas col-md-7" src="img/ideaToPractice/1-checklist.png" alt="">
+          <div> 
+            <figcaption class="text-start">1.<span class="black-accent-bold">Investigación y definición de objetivos.</span></figcaption>
+            <p class="text-start h2 mt-4">Escuchamos tus ideas, requisitos y expectativas, ya que tus necesidades son nuestra prioridad</p>
+          </div>
+        </figure>
+
+        <figure class="text-center d-flex flex-column flex-md-row align-items-center">
+          <img class="thumbnail-size-ideas col-md-7" src="img/ideaToPractice/2-smartphone.png" alt="">
+          <div>
+            <figcaption class="text-start">2.<span class="black-accent-bold">Diseño de interfaz y experiencia de usuario.</span></figcaption>
+            <p class="text-start h2 mt-4">Nos encargamos de desarrollar una experiencia óptima y atractiva para la interacción del usuario dentro de la aplicación.</p>
+          </div>
+        </figure>
+
+        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center">
+          <img class="thumbnail-size-ideas col-md-7" src="img/ideaToPractice/3-mac-computer.png" alt="">
+          <div>
+            <figcaption class="text-start">3.<span class="black-accent-bold">Implementación del sistema.</span></figcaption>
+            <p class="text-start h2 mt-4">Comienza la etapa de construcción del software con las tecnologías y diseño adoc previamente planteados.</p>
+          </div>
+        </figure>
+
+        <figure class="text-center d-flex flex-column flex-md-row align-items-center">
+          <img class="thumbnail-size-ideas col-md-7" src="img/ideaToPractice/4-ladybug.png" alt="">
+          <div>
+            <figcaption class="text-start">4.<span class="black-accent-bold">Testing.</span></figcaption>
+            <p class="text-start h2 mt-4">Evaluación y verificación de que el producto funciona correctamente, prevención de errores y mejoras en el rendimiento del software.</p>
+          </div>
+        </figure>
+        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center">
+          <img class="thumbnail-size-ideas col-md-7" src="img/ideaToPractice/5-wrench.png" alt="">
+          <div>
+            <figcaption class="text-start">5.<span class="black-accent-bold">Mantenimiento.</span></figcaption>
+            <p class="text-start h2 mt-4">Actualizaciónes y mejoras del sistema a lo largo del tiempo.</p>
+          </div>
+        </figure>
+    </section>
+
+    <!-- Software Trends Section -->
+    <section class="software-trends
+    ">
+    <div class="d-flex flex-column align-items-center">
+      <img class="que-somos-logo d-none d-lg-block d-xl-block" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
+      <h2 class="text-center mb-5"><span class="pink-accent-bold">Software </span>TRENDS</h2>
+    </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
+          <img class="thumbnail-size-trends" src="img/programmer-and-ux-ui-designer-working.jpg" alt="">
+          <figcaption class=" text-centermb-5">UX/UI for life</figcaption>
+          <button class="button-shape learn-more-button mt-5">Learn More</button>
+        </figure>
+        <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
+          <img class="thumbnail-size-trends" src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png" alt="">
+          <figcaption class="mb-5">Get answers to all your questions</figcaption>
+          <button class="button-shape learn-more-button mt-5">Learn More</button>
+        </figure>
+        <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
+          <img class="thumbnail-size-trends" src="img/achieving-success-in-web-development.jpg" alt="">
+          <figcaption class="text-center mb-5 swiss">Which technology is right for you?</figcaption>
+          <button class="button-shape learn-more-button mt-5">Learn More</button>
+        </figure>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer-dropdown d-md-flex">
+      <!-- <<About Mariachi -->
+      <div class="accordion" id="accordionAboutMariachi">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutMariachi" aria-expanded="true" aria-controls="collapseAboutMariachi">
+              About Mariachi
+            </button>
+            <p class="d-none d-md-block pink-accent-regular">About Mariachi</p>
+          </h2>
+
+          <div id="collapseAboutMariachi" class="collapse d-md-block" data-bs-parent="#accordionAboutMariachi">
+            <div class="accordion-body">
+              <ul>
+                <li class="dropdown-item"><a href="#">About</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Press</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Our Blog</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Leadership</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Board Members</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Careers</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Investor Relations</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Contact us</a></li>
+              </ul>
             </div>
           </div>
         </div>
+      </div><!-- >>About Mariachi -->
 
-      </section>
+      <div> <!--Separator-->
+      <!-- <<Products -->
+      <div class="accordion" id="accordionProducts">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
+              Products
+            </button>
+            <p class="d-none d-md-block pink-accent-regular">Products</p>
+          </h2>
 
+          <div id="collapseProducts" class="collapse d-md-block" data-bs-parent="#accordionProducts">
+            <div class="accordion-body">
+              <ul>
+                <li class="dropdown-item"><a href="#">Desarrollo de aplicaciones móviles (iOS y Android)</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Desarollo web</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Comercio electrónico</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Desarrollo de aplicaciones multiplataforma</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Diseño UX/UI</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- >>Products -->
 
+      <!-- <<Policies -->
+      <div class="accordion" id="accordionAboutPolicies">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicies" aria-expanded="true" aria-controls="collapsePolicies">
+              Policies
+            </button>
+            <p class="d-none d-md-block pink-accent-regular">Policies</p>
+          </h2>
+          
+          <div id="collapsePolicies" class="collapse d-md-block" data-bs-parent="#accordionAboutPolicies">
+            <div class="accordion-body">
+              <ul>
+                <li class="dropdown-item"><a href="#">Legal</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Accesibility</a></li>
+                <hr>
+                <li class="dropdown-item"><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- >>Policies -->
+      </div><!--Separator-->
       
-
-
+      <div class="footer-links">
+      <h2 class="pink-accent-bold mb-4">Stay in the know — we'll send you offers & more.</h2>
+      <button class="button-shape button-shape-wrap signup-button mb-5">
+        <div>Sign Up</div>
+      </button>
+      <div class="d-flex gap-4">
+        <a href="https://facebook.com"><img src="icons/social_media/i_facebook.png" alt="facebook_link"></a>
+        <a href="https://instagram.com"><img src="icons/social_media/i_instagram.png" alt="instagram_link"></a>
+        <a href="https://pinterest.com"><img src="icons/social_media/i_pinterest.png" alt="pinterest_link"></a>
+        <a href="https://youtube.com"><img src="icons/social_media/i_YouTube.png" alt="youtube_link"></a>
+        <a href="https://linkedin.com"><img src="icons/social_media/i_linkedin.png" alt="linkedin_link"></a>
+      </div>
+      <button class="button-shape button-shape-wrap mt-4">
+        <div>
+          <img src="icons/i_language.png" alt="language_icon"> EN <img src="icons/i_link.png" alt="link_icon">
+        </div>
+      </button>
+      </div>
+    </section>
     </main>
+<<<<<<< HEAD
    
   
 
+=======
+    <footer class="d-flex flex-column flex-md-row mb-4 mt-5 justify-content-between">
+      <p class="fw-bold">© 2022 Mariachi Labs. All rights reserved.</p>
+      <p>10855 Enrique Segoviano, MX 84095</p>
+    </footer>
+>>>>>>> a89c04593f2f8755628f302152f6b4609255b696
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>
