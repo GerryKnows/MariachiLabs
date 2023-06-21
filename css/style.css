@@ -88,14 +88,13 @@ body {
     width: 100%;
     height: 100vh;
     padding: 30% 10%;
-    
-    background-image: url("../img/banner-bg-mobile.png");
+    background-image: url("../img/banner-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 
-    @media (min-width: 768px) {
-        background-image: url("../img/banner-bg-desktop.png");
+    @media (max-width: 768px) {
+        background-image: url("../img/banner-bg-mobile.png");
     }
 }
 .banner h1 {
@@ -147,13 +146,11 @@ body {
     margin-bottom: 4rem;
 }
 
-.services-description,
-.our-services,
+.description1,
 .software-trends {
-    margin: 10rem auto;
-    width: 30rem;
+    margin: 30px auto;
     font-size: 2rem;
-    
+
     @media (min-width: 768px) {
         width: 85%;
     }
