@@ -93,9 +93,11 @@ body {
     background-size: cover;
     background-position: center top;
 
-    @media (max-width: 768px) {
-        background-image: url("../img/banner-bg-mobile.png");
-    }
+}
+@media (max-width: 768px) {
+    .banner {
+    background-image: url("../img/banner-bg-mobile.png"); 
+  }
 }
 .banner h1 {
     font-size: 3rem;
@@ -129,11 +131,16 @@ body {
     text-align:center;
     margin-top: 4rem;
     margin-bottom: 8rem;
-    padding: 0 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     font-size: 3.4rem;
-    @media (min-width: 768px) {
-        padding: 0 20rem;
-    }
+    
+}
+@media (min-width: 768px) {
+    .que-somos {
+    padding-left: 20rem;
+    padding-right: 20rem;
+ }
 }
 .que-somos-logo {
     width: 12rem;
@@ -151,9 +158,13 @@ body {
     margin: 30px auto;
     font-size: 2rem;
 
-    @media (min-width: 768px) {
-        width: 85%;
-    }
+   
+}
+@media (min-width: 768px) {
+    .description1,
+    .software-trends {
+    width: 85%; 
+  }
 }
 
 /* Made in Mariachi section*/
@@ -161,9 +172,12 @@ body {
     width: 100%;
     padding: 2.5rem;
     margin: 8rem auto;
-    @media (min-width: 768px) {
-        padding-left: 10rem;
-    }
+   
+}
+@media (min-width: 768px) {
+    .made-in {
+    padding-left: 10rem; 
+ }
 }
 .made-in h2 {
     font-size: 5rem;
@@ -264,6 +278,7 @@ footer {
     margin: 4rem auto;
     width: 34rem;
     font-size: 2rem;
+
     @media (min-width: 768px) {
         margin: 0 auto;
     }
@@ -274,16 +289,18 @@ footer {
 .footer-links p {
     font-size: 1.2rem;
 }
-
+.dropdown-item {
+    font-size: 1.2rem;
+}
 @media (min-width: 768px) {
     .accordion-body {
         padding: 0;
-        & ul {
-              padding: 0;
-        }
-        & hr {
-            display: none;
-        }
+    }
+    .accordion-body ul {
+        padding: 0;
+    }
+    .accordion-body hr {
+        display: none;
     }
 
     .services-description div figcaption {
