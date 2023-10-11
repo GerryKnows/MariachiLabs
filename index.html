@@ -300,7 +300,7 @@
                     <div class="col-lg-8">
                       <div class="form-outline mb-4">
                         <label class="form-label" for="phone">Message:</label>
-                        <textarea type="number" id="phone" class="form-control form-control-lg" rows="4" placeholder="Tell us how we can help you."
+                        <textarea type="number" id="message" class="form-control form-control-lg" rows="4" placeholder="Tell us how we can help you."
                           required ></textarea>
                         <div class="invalid-feedback">
                           Please leave us a message.
@@ -492,45 +492,47 @@
 
     async function submitForm(e) {
       e.preventDefault();
-      let name = document.getElementById("name").value;
-      let email = document.getElementById("email").value;
-      let phone = document.getElementById("phone").value;
-      let agree = document.getElementById("check").value;
+      let form = document.querySelector('form');
+      let dataObj = Object.fromEntries(new FormData(form).entries());
+      
       let captcha = grecaptcha.getResponse();
-      console.log("🚀 ~ file: index.html:457 ~ submitForm ~ captcha:", captcha);
-      let json = { name, email, phone, agree, captcha };
-      let errors = `Tenemos los siguientes problemas:<br/>`;
-      let fields = [];
-      console.log(json)
-      postData("mailer/mailer.php", json).then((data) => {
-        console.log(data); // JSON data parsed by `data.json()` call
-        if (data.errors) {
-          data.errors.forEach(element => {
-            fields.push(`${element.msg}`);
-          });
-          const str = fields.toString()
-          let bullets = str.replaceAll(',', ` <br/>`);
-
-          console.log("🚀 ~ file: index.html:499 ~ postData ~ bullets:", bullets)
-          Swal.fire({
-            title: `${errors}`,
-            html: `${bullets}`,
-            icon: 'error',
-            confirmButtonText: 'OK!!!'
-          })
-        } else {
-          Swal.fire({
-            title: 'Gracias por inscribirte en nuestro Bootcamp!!!',
-            text: "En poco tiempo se te contactará para hacer el seguimiento de tu inscripción.",
-            icon: 'success',
-            showCancelButton: false,
-            confirmButtonColor: '#950B4F',
-            confirmButtonText: 'Listo'
-          }).then((result) => {
-            location.reload()
-          })
+      if(!captcha){
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Debes validar el captcha para enviar tu información.</span>';
+      }else{
+        let payload = {
+          data:
+            {
+              nombre:dataObj.name,
+              email:dataObj.email,
+              phone: dataObj.phone,
+              mensaje:dataObj.message,
+              // captcha_response:captcha,
+              // submittedAt:Date.now(),
+              submit:true,
+            }
+          
         }
-      }).catch((err) => console.log(err));
+
+        let uri = 'mailer/mailer.php';
+        fetch(uri, {
+          method: 'POST', 
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        })
+        .then(response => response.json())
+        .then(data => {
+          if(data.status =='error'){
+            alert('We have and error on sending message:'+data.message);
+          }else{
+            alert('Message sent successfully');
+          }
+        })
+        .catch((error) => {
+          alert('We have an error');
+        });
+      }
     }
   </script>
 
