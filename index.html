@@ -1,236 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mariachi Labs</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!-- PT font Bayon Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=PT+Mono&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mariachi Labs</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- PT font Bayon Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=PT+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand offset-1" href="#">
-                <img src="icons/mariachi-final.svg" alt="" width="50" height="34">
-                <img src="icons/mariachilabs.svg" alt="" width="110" height="34">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-md-7">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portafolio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu h4" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Startups</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Enterprise</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Planning</a></li>
-                </ul>
-              </li>
-              <!-- <li class="nav-item active">         
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand offset-1" href="#">
+        <img src="icons/mariachi-final.svg" alt="" width="50" height="34">
+        <img src="icons/mariachilabs.svg" alt="" width="110" height="34">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-md-7">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+          </li>
+          <!-- <li class="nav-item active">         
                 <a class="nav-link" href="#">Blog</a>
               </li> -->
-              <li class="nav-item">         
-                <a class="nav-link" href="#">Contact us</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contactus">Contact Us</a>
               </li>
-              <!-- <li class="nav-item">         
+          <!-- <li class="nav-item">         
                 <a class="nav-link" href="#">En</a>
               </li> -->
-            </ul>
-          </div>
-        </div>
-    </nav>
-    </nav> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
 
 
-    <main>
-      <!-- Banner section -->
-      <section class="banner d-flex flex-row">
-        <div class="d-flex flex-column text-center h-100 justify-content-between justify-content-md-center">
-          <h1 class="">Custom Software Solutions</h1>
-          <img class="d-md-none w-100" src="img/iphone_12.png" alt="phone_image">
-          <div>
-            <button class="button-shape contact-banner-button mb-4">Contact us</button>
-            <button class="button-shape consultancy-button">Free consultancy</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="que-somos mx-auto">
-          <figure>
-            <img class="que-somos-logo" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
-            <figcaption>What is <span class="pink-accent-bold">Mariachi Labs</span>?</figcaption>
-          </figure>
-            <p>
-              Our services for <span class="pink-accent-bold">development</span>
-              and <span class="pink-accent-bold">design</span> software is focused 
-              on <span class="pink-accent-regular"> offer the best posible solutions</span>
-              for your company.
-            </p>
-      </section>
-
-      <section class="description1 d-flex flex-column flex-md-row justify-content-between">
-            <figure class="col-md-4 text-center">
-              <img src="icons/iconos_interfaz.png" alt="">
-              <figcaption><span class="pink-accent-regular">Atractive</span> user interface</figcaption>
-            </figure>
-            
-            <figure class="col-md-4 text-center">
-              <img src="icons/iconos_rapida.png" alt="">
-              <figcaption><span class="pink-accent-regular">Fast</span> Loading, efficient and improvement SEO position</figcaption>
-            </figure>
-
-            <figure class="col-md-4 text-center">
-              <img src="icons/iconos_ux.png" alt="">
-              <figcaption><span class="pink-accent-regular">Excelence on</span> user experience</figcaption>
-            </figure>
-      </section>
-
-      <section class="made-in d-flex flex-column flex-md-row align-items-center">
+  <main>
+    <!-- Banner section -->
+    <section class="banner d-flex flex-row">
+      <div class="d-flex flex-column text-center h-100 justify-content-between justify-content-md-center">
+        <h1 class="">Custom Software Solutions</h1>
+        <img class="d-md-none w-100" src="img/iphone_12.png" alt="phone_image">
         <div>
-          <h2 class="secondary-pink-accent-bold align-self-start">Made in <br>mariachi labs</h2>
-          <p>Discover all the options we have for you, <span class="secondary-pink-accent-regular">We are the integral solution for you.</span></p>
-          <!-- Desktop contact us button -->
-          <button class="button-shape contact-madein-button d-none d-md-block">Contact us!</button>
+          <button class="button-shape contact-banner-button mb-4">Contact us</button>
+          <button class="button-shape consultancy-button">Free consultancy</button>
         </div>
-        <!-- Images non-Carousel -->
-        <div class="slide d-none d-lg-flex col-md-6 gap-4 ">
-          <img src="img/achieving-success-in-web-development.jpg" alt="">
-          <img src="img/analyst-of-coding.jpg" alt="">
-          <img src="img/custom-soft-fondo.png" alt="">
+      </div>
+    </section>
+
+    <section id="aboutus" class="que-somos mx-auto">
+      <figure>
+        <img class="que-somos-logo" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
+        <figcaption>What is <span class="pink-accent-bold">Mariachi Labs</span>?</figcaption>
+      </figure>
+      <p>
+        Our services for <span class="pink-accent-bold">development</span>
+        and <span class="pink-accent-bold">design</span> software is focused
+        on <span class="pink-accent-regular"> offer the best posible solutions</span>
+        for your company.
+      </p>
+    </section>
+
+    <section class="description1 d-flex flex-column flex-md-row justify-content-between">
+      <figure class="col-md-4 text-center">
+        <img src="icons/iconos_interfaz.png" alt="">
+        <figcaption><span class="pink-accent-regular">Atractive</span> user interface</figcaption>
+      </figure>
+
+      <figure class="col-md-4 text-center">
+        <img src="icons/iconos_rapida.png" alt="">
+        <figcaption><span class="pink-accent-regular">Fast</span> Loading, efficient and improvement SEO position
+        </figcaption>
+      </figure>
+
+      <figure class="col-md-4 text-center">
+        <img src="icons/iconos_ux.png" alt="">
+        <figcaption><span class="pink-accent-regular">Excelence on</span> user experience</figcaption>
+      </figure>
+    </section>
+
+    <section class="made-in d-flex flex-column flex-md-row align-items-center">
+      <div>
+        <h2 class="secondary-pink-accent-bold align-self-start">Made in <br>mariachi labs</h2>
+        <p>Discover all the options we have for you, <span class="secondary-pink-accent-regular">We are the integral
+            solution for you.</span></p>
+        <!-- Desktop contact us button -->
+        <button class="button-shape contact-madein-button d-none d-md-block">Contact us!</button>
+      </div>
+      <!-- Images non-Carousel -->
+      <div class="slide d-none d-lg-flex col-md-6 gap-4 ">
+        <img src="img/achieving-success-in-web-development.jpg" alt="">
+        <img src="img/analyst-of-coding.jpg" alt="">
+        <img src="img/custom-soft-fondo.png" alt="">
+      </div>
+      <!-- Carousel -->
+      <div id="carouselExampleRide" class="carousel slide d-md-none" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/analyst-of-coding.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <!-- Carousel -->
-        <div id="carouselExampleRide" class="carousel slide d-md-none" data-bs-ride="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/analyst-of-coding.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <div class="carousel-controls">
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <div class="carousel-controls">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <!-- Mobile contact us button -->
-        <button class="button-shape contact-madein-button d-sm-block d-md-none">Contact us!</button>  
-      </section>
+      </div>
+      <!-- Mobile contact us button -->
+      <button class="button-shape contact-madein-button d-sm-block d-md-none">Contact us!</button>
+    </section>
 
 
-      <!-- Interested on our services -->
-      <section class="container text-center services p-4">
-        <h2><span class="pink-accent-bold">Interested</span> on our services?</h2>
-        <div class="row">
-          <div class="col-md-4">
-              <img class="thumbnail-size-interested" src="img/ourServices/1-rocket.png" alt="">
-              <div class="description">Startups apps development</div>
-          </div>
-          <div class="col-md-4">
-              <img class="thumbnail-size-interested" src="img/ourServices/2-bagSmartPhone.png" alt="">
-              <div class="description">Software and company solutions</div>
-          </div>
-          <div class="col-md-4">
-              <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
-              <div class="description">Planing and product strategy</div>
-          </div>
+    <!-- Interested on our services -->
+    <section id="services" class="container text-center services p-4">
+      <h2><span class="pink-accent-bold">Interested</span> on our services?</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="thumbnail-size-interested" src="img/ourServices/1-rocket.png" alt="">
+          <div class="description">Startups apps development</div>
         </div>
-        <button class="button-shape consultancy-our-services-button">Free consultancy</button>
-      </section>
+        <div class="col-md-3">
+          <img class="thumbnail-size-interested" src="img/ourServices/2-bagSmartPhone.png" alt="">
+          <div class="description">Software and company solutions</div>
+        </div>
+        <div class="col-md-3">
+          <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
+          <div class="description">Planing and product strategy</div>
+        </div>
+        <div class="col-md-3">
+          <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
+          <div class="description">Consultancy</div>
+        </div>
+      </div>
+      <button class="button-shape consultancy-our-services-button">Free consultancy</button>
+    </section>
 
-      <!-- From idea to practice -->
-      <section class="our-services services-description align-items-center">
-        <h2 class="text-center fs-1 mb-5"><span class="pink-accent-bold">From the idea to get alive! <br> </span>Know our process:</h2>
-       
-        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center col-8 offset-2">
-          <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/1-checklist.png" alt="">
-          <div> 
-            <figcaption class="text-start">1.<span class="black-accent-bold">Investigation and target definitions.</span></figcaption>
-            <p class="text-start h2 mt-4">We listen your ideas, requirement and expectations, your needs is our priority</p>
-          </div>
-        </figure>
+    <!-- From idea to practice -->
+    <section class="our-services services-description align-items-center">
+      <h2 class="text-center fs-1 mb-5"><span class="pink-accent-bold">From the idea to get alive! <br> </span>Know our
+        process:</h2>
 
-        <figure class="text-center d-flex flex-column flex-md-row align-items-center  col-8 offset-2 ">
-          <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/2-smartphone.png" alt="">
-          <div>
-            <figcaption class="text-start">2.<span class="black-accent-bold">Interface design and user experience mock up.</span></figcaption>
-            <p class="text-start h2 mt-4">We development the best experience and atractive user interface on the application for your needs.</p>
-          </div>
-        </figure>
+      <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center col-8 offset-2">
+        <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/1-checklist.png" alt="">
+        <div>
+          <figcaption class="text-start">1.<span class="black-accent-bold">Investigation and target definitions.</span>
+          </figcaption>
+          <p class="text-start h2 mt-4">We listen your ideas, requirement and expectations, your needs is our priority
+          </p>
+        </div>
+      </figure>
 
-        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center  col-8 offset-2">
-          <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/3-mac-computer.png" alt="">
-          <div>
-            <figcaption class="text-start">3.<span class="black-accent-bold">System implementation.</span></figcaption>
-            <p class="text-start h2 mt-4">The software construction stage begins with the previously proposed adoc technologies and design.</p>
-          </div>
-        </figure>
+      <figure class="text-center d-flex flex-column flex-md-row align-items-center  col-8 offset-2 ">
+        <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/2-smartphone.png" alt="">
+        <div>
+          <figcaption class="text-start">2.<span class="black-accent-bold">Interface design and user experience mock
+              up.</span></figcaption>
+          <p class="text-start h2 mt-4">We development the best experience and atractive user interface on the
+            application for your needs.</p>
+        </div>
+      </figure>
 
-        <figure class="text-center d-flex flex-column flex-md-row align-items-center  col-8 offset-2">
-          <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/4-ladybug.png" alt="">
-          <div>
-            <figcaption class="text-start">4.<span class="black-accent-bold">Testing.</span></figcaption>
-            <p class="text-start h2 mt-4">Evaluation and verification that the product is working correctly, preventing errors and improving software performance.</p>
-          </div>
-        </figure>
-        <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center  col-8 offset-2">
-          <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/5-wrench.png" alt="">
-          <div>
-            <figcaption class="text-start">5.<span class="black-accent-bold">Maintenance.</span></figcaption>
-            <p class="text-start h2 mt-4">System updates and improvements over time.</p>
-          </div>
-        </figure>
+      <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center  col-8 offset-2">
+        <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/3-mac-computer.png" alt="">
+        <div>
+          <figcaption class="text-start">3.<span class="black-accent-bold">System implementation.</span></figcaption>
+          <p class="text-start h2 mt-4">The software construction stage begins with the previously proposed adoc
+            technologies and design.</p>
+        </div>
+      </figure>
+
+      <figure class="text-center d-flex flex-column flex-md-row align-items-center  col-8 offset-2">
+        <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/4-ladybug.png" alt="">
+        <div>
+          <figcaption class="text-start">4.<span class="black-accent-bold">Testing.</span></figcaption>
+          <p class="text-start h2 mt-4">Evaluation and verification that the product is working correctly, preventing
+            errors and improving software performance.</p>
+        </div>
+      </figure>
+      <figure class="text-center d-flex flex-column flex-md-row-reverse align-items-center  col-8 offset-2">
+        <img class="thumbnail-size-ideas col-md-6" src="img/ideaToPractice/5-wrench.png" alt="">
+        <div>
+          <figcaption class="text-start">5.<span class="black-accent-bold">Maintenance.</span></figcaption>
+          <p class="text-start h2 mt-4">System updates and improvements over time.</p>
+        </div>
+      </figure>
     </section>
 
     <!-- Software Trends Section -->
     <section class="software-trends
     ">
-    <div class="d-flex flex-column align-items-center">
-      <img class="que-somos-logo d-none d-lg-block d-xl-block" src="./icons/mariachi-final.svg" alt="mariachi_labs_logo">
-      <h2 class="text-center mb-5"><span class="pink-accent-bold">Software </span>TRENDS</h2>
-    </div>
+      <div class="d-flex flex-column align-items-center">
+        <img class="que-somos-logo d-none d-lg-block d-xl-block" src="./icons/mariachi-final.svg"
+          alt="mariachi_labs_logo">
+        <h2 class="text-center mb-5"><span class="pink-accent-bold">Software </span>TRENDS</h2>
+      </div>
       <div class="d-flex flex-column flex-md-row justify-content-between">
         <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
           <img class="thumbnail-size-trends" src="img/programmer-and-ux-ui-designer-working.jpg" alt="">
-          <figcaption class=" text-center mb-5">UX/UI for life</figcaption>
+          <figcaption class=" text-center">UX/UI for life</figcaption>
           <button class="button-shape learn-more-button mt-5">Learn More</button>
         </figure>
         <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
           <img class="thumbnail-size-trends" src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png" alt="">
-          <figcaption class="mb-5">Get answers to all your questions</figcaption>
+          <figcaption class="text-center mt-3">Get answers to all your questions</figcaption>
           <button class="button-shape learn-more-button mt-5">Learn More</button>
         </figure>
         <figure class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center">
           <img class="thumbnail-size-trends" src="img/achieving-success-in-web-development.jpg" alt="">
-          <figcaption class="text-center mb-5 swiss">Which technology is right for you?</figcaption>
+          <figcaption class="text-center mt-3">Which technology is right for you?</figcaption>
           <button class="button-shape learn-more-button mt-5">Learn More</button>
         </figure>
+      </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section id="contactus" class="software-trends">
+      <div class="d-flex flex-column align-items-center">
+        <img class="que-somos-logo d-none d-lg-block d-xl-block" src="./icons/mariachi-final.svg"
+          alt="mariachi_labs_logo">
+        <h2 class="text-center mb-5"><span class="pink-accent-bold">CONTACT </span>US</h2>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-center">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                <form class="was-validated " id="form" novalidate>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="name">Name:</label>
+                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Alonso Salcido"
+                          required />
+                        <div class="valid-feedback">We need continue.</div>
+                        <div class="invalid-feedback">Please tell us your name.</div>
+    
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="email">Email:</label>
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="tu@mail.com"
+                          required />
+                        <div class="valid-feedback">We almost ready.</div>
+                        <div class="invalid-feedback">
+                          Please leave us your email.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="phone">Cellphone:</label>
+                        <input type="number" id="phone" class="form-control form-control-lg" placeholder="(614)3983070"
+                          required />
+                        <div class="invalid-feedback">
+                          Please leave us your cellphone.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="phone">Message:</label>
+                        <textarea type="number" id="phone" class="form-control form-control-lg" rows="4" placeholder="Tell us how we can help you."
+                          required ></textarea>
+                        <div class="invalid-feedback">
+                          Please leave us a message.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="check" required>
+                        <label class="form-check-label" for="check">
+                          Checking this you are agree with our terms.
+                        </label>
+                        <div class="invalid-feedback">
+                          Agree with terms.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <div class="g-recaptcha" data-sitekey="6Le3mpAoAAAAAOWa0Wd1JWRbPuNY-CojNgfItb-u"
+                      data-callback="callback"></div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                      <div class="col-lg-10">
+                          <button class="
+                                  button-shape 
+                                  button-shape-wrap 
+                                  signup-button 
+                                  mb-5" 
+                                  onclick="submitForm(event)" disabled>
+                            <div>Send Message</div>
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Footer -->
@@ -239,7 +354,9 @@
       <div class="accordion offset-1" id="accordionAboutMariachi">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutMariachi" aria-expanded="true" aria-controls="collapseAboutMariachi">
+            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseAboutMariachi" aria-expanded="true"
+              aria-controls="collapseAboutMariachi">
               About Mariachi Labs
             </button>
             <p class="d-none d-md-block pink-accent-regular">About Mariachi Labs</p>
@@ -270,85 +387,153 @@
       </div><!-- >>About Mariachi -->
 
       <div> <!--Separator-->
-      <!-- <<Products -->
-      <div class="accordion offset-1" id="accordionProducts">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
-              Products
-            </button>
-            <p class="d-none d-md-block pink-accent-regular">Products</p>
-          </h2>
+        <!-- <<Products -->
+        <div class="accordion offset-1" id="accordionProducts">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseProducts" aria-expanded="true"
+                aria-controls="collapseProducts">
+                Products
+              </button>
+              <p class="d-none d-md-block pink-accent-regular">Products</p>
+            </h2>
 
-          <div id="collapseProducts" class="collapse d-md-block" data-bs-parent="#accordionProducts">
-            <div class="accordion-body">
-              <ul>
-                <li class="dropdown-item"><a href="#">Mobile apps develpment (iOS y Android)</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Web development</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">E-commerce</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Multiplatform apps development</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">UX/UI Design system</a></li>
-              </ul>
+            <div id="collapseProducts" class="collapse d-md-block" data-bs-parent="#accordionProducts">
+              <div class="accordion-body">
+                <ul>
+                  <li class="dropdown-item"><a href="#">Mobile apps develpment (iOS y Android)</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">Web development</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">E-commerce</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">Multiplatform apps development</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">UX/UI Design system</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div><!-- >>Products -->
+        </div><!-- >>Products -->
 
-      <!-- <<Policies -->
-      <div class="accordion offset-1" id="accordionAboutPolicies">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicies" aria-expanded="true" aria-controls="collapsePolicies">
-              Policies
-            </button>
-            <p class="d-none d-md-block pink-accent-regular">Policies</p>
-          </h2>
-          
-          <div id="collapsePolicies" class="collapse d-md-block" data-bs-parent="#accordionAboutPolicies">
-            <div class="accordion-body">
-              <ul>
-                <li class="dropdown-item"><a href="#">Legal</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Accesibility</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Privacy Policy</a></li>
-              </ul>
+        <!-- <<Policies -->
+        <div class="accordion offset-1" id="accordionAboutPolicies">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button pink-accent-regular collapsed d-md-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapsePolicies" aria-expanded="true"
+                aria-controls="collapsePolicies">
+                Policies
+              </button>
+              <p class="d-none d-md-block pink-accent-regular">Policies</p>
+            </h2>
+
+            <div id="collapsePolicies" class="collapse d-md-block" data-bs-parent="#accordionAboutPolicies">
+              <div class="accordion-body">
+                <ul>
+                  <li class="dropdown-item"><a href="#">Legal</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">Accesibility</a></li>
+                  <hr>
+                  <li class="dropdown-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div><!-- >>Policies -->
+        </div><!-- >>Policies -->
       </div><!--Separator-->
-      
+
       <div class="footer-links">
-      <h2 class="pink-accent-bold mb-4">Keep in touch — we'll send you offers & more.</h2>
-      <button class="button-shape button-shape-wrap signup-button mb-5">
-        <div>Sign Up</div>
-      </button>
-      <div class="d-flex gap-4">
-        <a href="https://facebook.com"><img src="icons/social_media/i_facebook.png" alt="facebook_link"></a>
-        <a href="https://instagram.com"><img src="icons/social_media/i_instagram.png" alt="instagram_link"></a>
-        <a href="https://pinterest.com"><img src="icons/social_media/i_pinterest.png" alt="pinterest_link"></a>
+        <h2 class="pink-accent-bold mb-4">Keep in touch — we'll send you offers & more.</h2>
+        <button class="button-shape button-shape-wrap signup-button mb-5">
+          <div>Sign Up</div>
+        </button>
+        <div class="d-flex gap-4">
+          <!--<a href="https://facebook.com"><img src="icons/social_media/i_facebook.png" alt="facebook_link"></a>-->
+          <a href="https://instagram.com"><img src="icons/social_media/i_instagram.png" alt="instagram_link"></a>
+          <!--<a href="https://pinterest.com"><img src="icons/social_media/i_pinterest.png" alt="pinterest_link"></a>
         <a href="https://youtube.com"><img src="icons/social_media/i_YouTube.png" alt="youtube_link"></a>
-        <a href="https://linkedin.com"><img src="icons/social_media/i_linkedin.png" alt="linkedin_link"></a>
-      </div>
-      <button class="button-shape button-shape-wrap mt-4">
-        <div>
-          <img src="icons/i_language.png" alt="language_icon"> EN <img src="icons/i_link.png" alt="link_icon">
+        <a href="https://linkedin.com"><img src="icons/social_media/i_linkedin.png" alt="linkedin_link"></a>-->
         </div>
-      </button>
+        <button class="button-shape button-shape-wrap mt-4">
+          <div>
+            <img src="icons/i_language.png" alt="language_icon"> EN <img src="icons/i_link.png" alt="link_icon">
+          </div>
+        </button>
       </div>
     </section>
-    </main>
+  </main>
 
-    <footer class="d-flex flex-column flex-md-row mb-4 mt-5 justify-content-between">
-      <p class="fw-bold">© 2023 Mariachi Labs. All rights reserved.</p>
-      <p>Chihuahua, Chih. MX</p>
-      <!-- <p>10855 Enrique Segoviano, MX 84095</p> -->
-    </footer>
+  <footer class="d-flex flex-column flex-md-row mb-4 mt-5 justify-content-between">
+    <p class="fw-bold">© 2023 Mariachi Labs. All rights reserved.</p>
+    <p>Chihuahua, Chih. MX</p>
+    <!-- <p>10855 Enrique Segoviano, MX 84095</p> -->
+  </footer>
+  <script type="text/javascript">
+    function callback() {
+      const submitButton = document.getElementById("submit-form");
+      submitButton.removeAttribute("disabled");
+    }
+
+    async function postData(url = "", data = {}) {
+      // Default options are marked with *
+      const response = await fetch(url, {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data), // body data type must match "Content-Type" header
+      });
+      return response.json(); // parses JSON response into native JavaScript objects
+    }
+
+    async function submitForm(e) {
+      e.preventDefault();
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let agree = document.getElementById("check").value;
+      let captcha = grecaptcha.getResponse();
+      console.log("🚀 ~ file: index.html:457 ~ submitForm ~ captcha:", captcha);
+      let json = { name, email, phone, agree, captcha };
+      let errors = `Tenemos los siguientes problemas:<br/>`;
+      let fields = [];
+      console.log(json)
+      postData("mailer/mailer.php", json).then((data) => {
+        console.log(data); // JSON data parsed by `data.json()` call
+        if (data.errors) {
+          data.errors.forEach(element => {
+            fields.push(`${element.msg}`);
+          });
+          const str = fields.toString()
+          let bullets = str.replaceAll(',', ` <br/>`);
+
+          console.log("🚀 ~ file: index.html:499 ~ postData ~ bullets:", bullets)
+          Swal.fire({
+            title: `${errors}`,
+            html: `${bullets}`,
+            icon: 'error',
+            confirmButtonText: 'OK!!!'
+          })
+        } else {
+          Swal.fire({
+            title: 'Gracias por inscribirte en nuestro Bootcamp!!!',
+            text: "En poco tiempo se te contactará para hacer el seguimiento de tu inscripción.",
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#950B4F',
+            confirmButtonText: 'Listo'
+          }).then((result) => {
+            location.reload()
+          })
+        }
+      }).catch((err) => console.log(err));
+    }
+  </script>
 
 </body>
+
 </html>
