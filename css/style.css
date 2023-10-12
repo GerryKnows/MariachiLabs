@@ -47,14 +47,16 @@ body {
     font-weight: bolder;
 }
 /*Buttons*/
-.button-shape {
-    height: 4.5rem;
-    width: 23rem;
+button {
     border: none;
     border-radius: 4.5rem;
     font-size: 1.5rem;
-    font-family: 'Inter';
-    font-weight: 400;
+    font-family: 'Inter' !important;
+    font-weight: 400 !important;
+}
+.button-shape {
+    height: 4.5rem;
+    width: 23rem;
 }
 .button-shape:hover {
     opacity: .7;

@@ -43,6 +43,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#services">Services</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#services">
+              <img src="icons/i_language.png" alt="language_icon"> SPANISH
+            </a>
+          </li>
           <!-- <li class="nav-item active">         
                 <a class="nav-link" href="#">Blog</a>
               </li> -->
@@ -106,8 +111,9 @@
     <section class="made-in d-flex flex-column flex-md-row align-items-center">
       <div>
         <h2 class="secondary-pink-accent-bold align-self-start">Made in <br>mariachi labs</h2>
-        <p>Discover all the options we have for you, <span class="secondary-pink-accent-regular">We are the integral
-            solution for you.</span></p>
+        <p>Discover all the options we have for you, 
+          <span class="secondary-pink-accent-regular">We are the integral solution you need.</span>
+        </p>
         <!-- Desktop contact us button -->
         <button class="button-shape contact-madein-button d-none d-md-block">Contact us!</button>
       </div>
@@ -158,14 +164,14 @@
         </div>
         <div class="col-md-3">
           <img class="thumbnail-size-interested" src="img/ourServices/2-bagSmartPhone.png" alt="">
-          <div class="description">Software and company solutions</div>
+          <div class="description">Software and enterprise solutions</div>
         </div>
         <div class="col-md-3">
           <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
           <div class="description">Planing and product strategy</div>
         </div>
         <div class="col-md-3">
-          <img class="thumbnail-size-interested" src="img/ourServices/3-whiteBoardCoach.png" alt="">
+          <img class="thumbnail-size-interested" src="img/ourServices/4-consultancy.png" alt="">
           <div class="description">Consultancy</div>
         </div>
       </div>
@@ -266,7 +272,7 @@
                     <div class="col-lg-6">
                       <div class="form-outline mb-4">
                         <label class="form-label" for="name">Name:</label>
-                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Alonso Salcido"
+                        <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Juan Mariachi"
                           required />
                         <div class="valid-feedback">We need continue.</div>
                         <div class="invalid-feedback">Please tell us your name.</div>
@@ -276,7 +282,7 @@
                     <div class="col-lg-6">
                       <div class="form-outline mb-4">
                         <label class="form-label" for="email">Email:</label>
-                        <input type="email" id="email" class="form-control form-control-lg" placeholder="tu@mail.com"
+                        <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="your@mail.com"
                           required />
                         <div class="valid-feedback">We almost ready.</div>
                         <div class="invalid-feedback">
@@ -290,7 +296,7 @@
                     <div class="col-lg-4">
                       <div class="form-outline mb-4">
                         <label class="form-label" for="phone">Cellphone:</label>
-                        <input type="number" id="phone" class="form-control form-control-lg" placeholder="(614)3983070"
+                        <input type="number" id="phone" name="phone" class="form-control form-control-lg" placeholder="(000)0000000"
                           required />
                         <div class="invalid-feedback">
                           Please leave us your cellphone.
@@ -299,8 +305,8 @@
                     </div>
                     <div class="col-lg-8">
                       <div class="form-outline mb-4">
-                        <label class="form-label" for="phone">Message:</label>
-                        <textarea type="number" id="message" class="form-control form-control-lg" rows="4" placeholder="Tell us how we can help you."
+                        <label class="form-label" for="message">Message:</label>
+                        <textarea type="number" id="message" name="message" class="form-control form-control-lg" rows="4" placeholder="Tell us how we can help you."
                           required ></textarea>
                         <div class="invalid-feedback">
                           Please leave us a message.
@@ -313,7 +319,7 @@
                   <div class="form-check d-flex justify-content-center mb-5">
                     <div class="form-check d-flex justify-content-center mb-5">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="true" id="check" required>
+                        <input class="form-check-input" type="checkbox" name="check" value="true" id="check" required>
                         <label class="form-check-label" for="check">
                           Checking this you are agree with our terms.
                         </label>
@@ -328,8 +334,8 @@
                       data-callback="callback"></div>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                      <div class="col-lg-10">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-12">
                           <button class="
                                   button-shape 
                                   button-shape-wrap 
@@ -367,19 +373,19 @@
               <ul>
                 <li class="dropdown-item"><a href="#">About</a></li>
                 <hr>
-                <li class="dropdown-item"><a href="#">Press</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Our Blog</a></li>
-                <hr>
+                <!-- <li class="dropdown-item"><a href="#">Press</a></li>
+                <hr> -->
+                <!-- <li class="dropdown-item"><a href="#">Our Blog</a></li>
+                <hr> -->
                 <li class="dropdown-item"><a href="#">Leadership</a></li>
                 <hr>
                 <li class="dropdown-item"><a href="#">Board Members</a></li>
                 <hr>
-                <li class="dropdown-item"><a href="#">Careers</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Investor Relations</a></li>
-                <hr>
-                <li class="dropdown-item"><a href="#">Contact us</a></li>
+                <!-- <li class="dropdown-item"><a href="#">Careers</a></li>
+                <hr> -->
+                <!-- <li class="dropdown-item"><a href="#">Investor Relations</a></li>
+                <hr> -->
+                <li class="dropdown-item"><a href="#contactus">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -446,19 +452,19 @@
 
       <div class="footer-links">
         <h2 class="pink-accent-bold mb-4">Keep in touch — we'll send you offers & more.</h2>
-        <button class="button-shape button-shape-wrap signup-button mb-5">
+        <!-- <button class="button-shape button-shape-wrap signup-button mb-5">
           <div>Sign Up</div>
-        </button>
+        </button> -->
         <div class="d-flex gap-4">
           <!--<a href="https://facebook.com"><img src="icons/social_media/i_facebook.png" alt="facebook_link"></a>-->
-          <a href="https://instagram.com"><img src="icons/social_media/i_instagram.png" alt="instagram_link"></a>
+          <a href="https://www.instagram.com/mariachilabs"><img src="icons/social_media/i_instagram.png" alt="instagram_link"></a>
           <!--<a href="https://pinterest.com"><img src="icons/social_media/i_pinterest.png" alt="pinterest_link"></a>
         <a href="https://youtube.com"><img src="icons/social_media/i_YouTube.png" alt="youtube_link"></a>
         <a href="https://linkedin.com"><img src="icons/social_media/i_linkedin.png" alt="linkedin_link"></a>-->
         </div>
         <button class="button-shape button-shape-wrap mt-4">
           <div>
-            <img src="icons/i_language.png" alt="language_icon"> EN <img src="icons/i_link.png" alt="link_icon">
+            <img src="icons/i_language.png" alt="language_icon"> SPANISH <img src="icons/i_link.png" alt="link_icon">
           </div>
         </button>
       </div>
@@ -506,6 +512,7 @@
               email:dataObj.email,
               phone: dataObj.phone,
               mensaje:dataObj.message,
+              check:dataObj.check,
               // captcha_response:captcha,
               // submittedAt:Date.now(),
               submit:true,
