@@ -45,7 +45,7 @@ header('Content-Type: application/json');
         $mail->Port = $externalMailPort;
         
         $mail->addReplyTo($data['email'], $data['nombre']);
-        $mail->setFrom($externalMailAddress, 'Mailer Bennu Energy');
+        $mail->setFrom($externalMailAddress, 'Mailer Mariachi Labs');
         $mail->addAddress($myPersonalEmail);
 
         $mail->isHTML(true);    
@@ -63,8 +63,16 @@ header('Content-Type: application/json');
                     <td>{$data['email']}</td>
                 </tr>
                 <tr>
+                    <td><b>Phone:</b></td>
+                    <td>{$data['phone']}</td>
+                </tr>
+                <tr>
                     <td><b>Mensaje:</b></td>
                     <td>{$data['mensaje']}</td>
+                </tr>
+                <tr>
+                    <td><b>Check:</b></td>
+                    <td>{$data['check']}</td>
                 </tr>
             </table>
         </div>";
