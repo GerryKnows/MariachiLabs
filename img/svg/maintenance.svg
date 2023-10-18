@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100.00197mm"
+   height="99.999985mm"
+   viewBox="0 0 100.00197 99.999985"
+   version="1.1"
+   id="svg41417"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="maintenance.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview41419"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.75098906"
+     inkscape:cx="199.07081"
+     inkscape:cy="438.75473"
+     inkscape:window-width="1920"
+     inkscape:window-height="1049"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs41414" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.879953,-173.49431)">
+    <g
+       id="g41497">
+      <path
+         id="rect4579"
+         style="fill:#000000;stroke:none;stroke-width:9.34172"
+         d="m 148.69768,182.47697 -10.21555,10.21561 c -0.72019,0.72017 -1.88061,0.71817 -2.60079,-0.002 l -5.19962,-5.1996 c -0.72019,-0.7202 -0.72019,-1.87862 0,-2.59884 l 10.21361,-10.21356 a 14.782345,14.782345 0 0 0 -16.24659,3.14186 14.782345,14.782345 0 0 0 -4.12929,12.64064 L 66.84673,244.1338 a 14.782345,14.782345 0 0 0 -12.640594,4.12923 14.782345,14.782345 0 0 0 -3.141938,16.24659 l 10.286695,-10.28667 c 0.720166,-0.72019 1.878642,-0.72019 2.598832,0 l 5.199633,5.19961 c 0.720166,0.72019 0.72211,1.88061 0.0019,2.60084 l -10.286695,10.28663 a 14.782345,14.782345 0 0 0 16.246585,-3.14187 14.782345,14.782345 0 0 0 4.129303,-12.6446 l 53.668779,-53.66878 a 14.782345,14.782345 0 0 0 12.6446,-4.12923 14.782345,14.782345 0 0 0 3.14381,-16.24858 z" />
+      <circle
+         class="st4"
+         cx="154.32216"
+         cy="190.02783"
+         r="6.8758526"
+         id="circle151"
+         style="fill:#d81159;stroke-width:1.96452"
+         transform="rotate(15)" />
+    </g>
+  </g>
+</svg>
