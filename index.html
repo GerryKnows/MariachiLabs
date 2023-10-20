@@ -10,9 +10,6 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
   <!-- PT font Bayon Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +19,10 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -107,6 +108,7 @@
         <figcaption><span class="pink-accent-regular">Excelence on</span> user experience</figcaption>
       </figure>
     </section>
+    
 
     <section class="made-in d-flex flex-column flex-md-row align-items-center">
       <div>
@@ -117,38 +119,41 @@
         <!-- Desktop contact us button -->
         <button class="button-shape contact-madein-button d-none d-md-block">Contact us!</button>
       </div>
-      <!-- Images non-Carousel -->
-      <div class="slide d-none d-lg-flex col-md-6 gap-4 ">
-        <img src="img/achieving-success-in-web-development.jpg" alt="">
-        <img src="img/analyst-of-coding.jpg" alt="">
-        <img src="img/custom-soft-fondo.png" alt="">
-      </div>
+      
       <!-- Carousel -->
-      <div id="carouselExampleRide" class="carousel slide d-md-none" data-bs-ride="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/analyst-of-coding.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png" class="d-block w-100" alt="...">
-          </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-controls">
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    
+        <div class="item">
+          <img src="img/analyst-of-coding.jpg" class="d-block w-100" alt="...">
+        </div>
+    
+        <div class="item">
+          <img src="img/achieving-success-in-web-development.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
+    
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
       <!-- Mobile contact us button -->
       <button class="button-shape contact-madein-button d-sm-block d-md-none">Contact us!</button>
     </section>
@@ -483,6 +488,7 @@
     <!-- <p>10855 Enrique Segoviano, MX 84095</p> -->
   </footer>
   <script type="text/javascript">
+
     function callback() {
       const submitButton = document.getElementById("submit-form");
       submitButton.removeAttribute("disabled");
@@ -548,6 +554,8 @@
       }
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
 

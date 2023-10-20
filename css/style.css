@@ -191,7 +191,7 @@ button {
 }
 /*Carousel*/
 .slide img{
-    height: 46rem;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
