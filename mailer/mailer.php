@@ -31,7 +31,7 @@ header('Content-Type: application/json');
     $response = ['message'=>"Hubo un problema para enviar el correo", 'status'=>"error" ];
     if(isset($_POST['data']) && $_POST['data']['submit']) {
         $data = $_POST['data'];
-        $subject = "Contacto de bennu energy {$data['nombre']}";
+        $subject = "Contacto de mariachilabs.mx por {$data['nombre']}";
         $mail = new PHPMailer(true);
 
         $mail->SMTPDebug = 0;
