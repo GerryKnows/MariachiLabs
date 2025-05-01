@@ -87,29 +87,7 @@ button {
   height: 20rem;
 }
 /*Banner Section*/
-.banner {
-  width: 100%;
-  height: 100vh;
-  padding: 30% 10%;
-  background-image: url("../img/banner-bg-desktop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-}
-@media (max-width: 768px) {
-  .banner {
-    background-image: url("../img/banner-bg-mobile.png");
-  }
-}
-.banner h1 {
-  font-size: 3rem;
-  color: var(--white);
-}
 
-.contact-banner-button {
-  color: var(--primaryPink);
-  background-color: var(--white);
-}
 .consultancy-button,
 .contact-madein-button,
 .consultancy-our-services-button {
@@ -397,5 +375,136 @@ footer {
   .language-selector {
     display: inline-flex !important;
     margin-top: 1rem;
+  }
+}
+
+/* Hero Banner Section */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/banner-bg-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(216, 17, 89, 0.9) 0%,
+    rgba(136, 45, 83, 0.8) 100%
+  );
+  mix-blend-mode: multiply;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+
+.image-wrapper {
+  position: relative;
+  padding: 2rem;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Botones del banner actualizados */
+.contact-banner-button {
+  background-color: var(--white);
+  color: var(--primaryPink);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-banner-button:hover {
+  background-color: var(--primaryPink);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(216, 17, 89, 0.3);
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .hero-background {
+    background-image: url("../img/banner-bg-mobile.webp");
   }
 }
