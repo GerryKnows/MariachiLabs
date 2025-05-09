@@ -107,29 +107,43 @@ button {
 }
 
 /*Que somos section*/
-.que-somos {
-  text-align: center;
+.about-us {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
   margin-top: 4rem;
   margin-bottom: 8rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  font-size: 3.4rem;
 }
-@media (min-width: 768px) {
-  .que-somos {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-}
-.que-somos-logo {
+
+.about-us-logo {
   width: 12rem;
-  margin-bottom: 2rem;
 }
-.que-somos p {
-  font-size: 2rem;
+
+.feature-icon {
+  height: 80px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
 }
-.que-somos figure {
-  margin-bottom: 4rem;
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(216, 17, 89, 0.1) !important;
+}
+
+.hover-card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+.icon-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .description1,
@@ -191,25 +205,6 @@ button {
 .contact-madein-button {
   margin-top: 3rem;
   margin-bottom: 7rem;
-}
-
-.services > h2,
-.software-trends h2 {
-  font-size: 3.4rem;
-  margin-bottom: 10rem;
-}
-.our-services span {
-  font-size: 3.5rem;
-}
-.our-services figcaption,
-.our-services figcaption span {
-  font-size: 2.3rem;
-}
-.description {
-  font-size: 2.3rem;
-}
-.consultancy-our-services-button {
-  margin-top: 12rem;
 }
 
 /*Footer*/
@@ -508,3 +503,84 @@ footer {
     background-image: url("../img/banner-bg-mobile.webp");
   }
 }
+
+/* Services Section */
+.services {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-icon-wrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(216, 17, 89, 0.1) !important;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.services h2 {
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .services .row > div {
+    margin-bottom: 2rem;
+  }
+
+  .services h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* About Us and Services Text Sizes */
+.about-us .display-4,
+.services .display-4 {
+  font-size: 4.5rem;
+}
+
+.about-us .lead {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.about-us .h4 {
+  font-size: 2.4rem;
+}
+
+.services .h5 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-us .display-4,
+  .services .display-4 {
+    font-size: 3.5rem;
+  }
+
+  .about-us .h4 {
+    font-size: 2rem;
+  }
+
+  .services .h5 {
+    font-size: 1.8rem;

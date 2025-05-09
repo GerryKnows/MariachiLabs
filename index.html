@@ -37,6 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=PT+Mono&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -147,52 +148,118 @@
         </div>
       </section>
 
-      <section id="aboutus" class="que-somos mx-auto">
-        <figure>
-          <img
-            class="que-somos-logo"
-            src="./icons/mariachi-final.svg"
-            alt="mariachi_labs_logo"
-          />
-          <figcaption>
-            What is <span class="pink-accent-bold">Mariachi Labs</span>?
-          </figcaption>
-        </figure>
-        <p>
-          Our services for <span class="pink-accent-bold">development</span> and
-          <span class="pink-accent-bold">design</span> software is focused on
-          <span class="pink-accent-regular">
-            offer the best posible solutions</span
-          >
-          for your company.
-        </p>
-      </section>
+      <!-- about us section -->
+      <section id="aboutus" class="about-us py-5">
+        <div class="container">
+          <!-- title and description -->
+          <div class="row mb-5 text-center">
+            <div class="col-12">
+              <img
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="about-us-logo mb-4"
+                src="./icons/mariachi-final.svg"
+                alt="mariachi_labs_logo"
+              />
+              <h2
+                class="display-4 fw-bold mb-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                What is <span class="pink-accent-bold">Mariachi Labs</span>?
+              </h2>
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <p
+                    class="lead text-muted mb-5"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    Our services for
+                    <span class="pink-accent-bold">development</span> and
+                    <span class="pink-accent-bold">design</span> software is
+                    focused on
+                    <span class="pink-accent-regular"
+                      >offering the best possible solutions</span
+                    >
+                    for your company.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <section
-        class="description1 d-flex flex-column flex-md-row justify-content-between"
-      >
-        <figure class="col-md-4 text-center">
-          <img src="img/svg/user_interface.svg" height="200px" />
-          <figcaption>
-            <span class="pink-accent-regular">Atractive</span> user interface
-          </figcaption>
-        </figure>
+          <!-- about us cards -->
+          <!-- user interface card -->
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-wrapper mb-3">
+                    <img
+                      src="img/svg/user_interface.svg"
+                      alt="User Interface"
+                      class="feature-icon"
+                    />
+                  </div>
+                  <h3 class="h4 mb-3">User Interface</h3>
+                  <p class="text-muted mb-0 lead">
+                    Creating
+                    <span class="pink-accent-regular">attractive</span> and
+                    intuitive interfaces that engage your users
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <figure class="col-md-4 text-center">
-          <img src="img/svg/seo.svg" height="200px" />
-          <figcaption>
-            <span class="pink-accent-regular">Fast</span> Loading, efficient and
-            improvement SEO position
-          </figcaption>
-        </figure>
+            <!-- performance card -->
+            <div
+              class="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-wrapper mb-3">
+                    <img src="img/svg/seo.svg" alt="seo" class="feature-icon" />
+                  </div>
+                  <h3 class="h4 mb-3">Performance</h3>
+                  <p class="text-muted mb-0 lead">
+                    <span class="pink-accent-regular">Fast</span> loading times
+                    and optimized SEO for maximum visibility
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <figure class="col-md-4 text-center">
-          <img src="img/svg/excellence.svg" height="200px" />
-          <figcaption>
-            <span class="pink-accent-regular">Excelence on</span> user
-            experience
-          </figcaption>
-        </figure>
+            <!-- user experience card -->
+            <div
+              class="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-wrapper mb-3">
+                    <img
+                      src="img/svg/excellence.svg"
+                      alt="User Experience"
+                      class="feature-icon"
+                    />
+                  </div>
+                  <h3 class="h4 mb-3">User Experience</h3>
+                  <p class="text-muted mb-0 lead">
+                    <span class="pink-accent-regular">Excellence</span> in
+                    creating meaningful user experiences
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section
@@ -269,47 +336,121 @@
       </section>
 
       <!-- Interested on our services -->
-      <section id="services" class="container text-center services p-4">
-        <h2>
-          <span class="pink-accent-bold">Interested</span> on our services?
-        </h2>
-        <div class="row">
-          <div class="col-md-3">
-            <img
-              class="thumbnail-size-interested"
-              src="img/svg/deploy.svg"
-              height="200px"
-            />
-            <div class="description">Startups apps development</div>
+      <section id="services" class="services py-5 bg-light">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col-12">
+              <h2
+                class="display-4 mb-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <span class="pink-accent-bold">Interested</span> in our
+                services?
+              </h2>
+              <div class="row justify-content-center">
+                <div class="col-lg-8"></div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <img
-              class="thumbnail-size-interested"
-              src="img/svg/solutions.svg"
-              height="200px"
-            />
-            <div class="description">Software and enterprise solutions</div>
-          </div>
-          <div class="col-md-3">
-            <img
-              class="thumbnail-size-interested"
-              src="img/svg/strategy.svg"
-              height="200px"
-            />
-            <div class="description">Planing and product strategy</div>
-          </div>
-          <div class="col-md-3">
-            <img
-              class="thumbnail-size-interested"
-              src="img/svg/consultancy.svg"
-              height="200px"
-            />
-            <div class="description">Consultancy</div>
+
+          <!-- services cards -->
+
+          <div class="row g-4">
+            <!-- Startups Development Card -->
+
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+              <div
+                class="service-card card h-100 border-0 shadow-sm hover-card"
+              >
+                <div class="card-body text-center p-4">
+                  <div class="service-icon-wrapper mb-4">
+                    <img
+                      src="img/svg/deploy.svg"
+                      alt="Startups Development"
+                      class="service-icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">Startups Development</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enterprise Solutions Card -->
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div
+                class="service-card card h-100 border-0 shadow-sm hover-card"
+              >
+                <div class="card-body text-center p-4">
+                  <div class="service-icon-wrapper mb-4">
+                    <img
+                      src="img/svg/solutions.svg"
+                      alt="Enterprise Solutions"
+                      class="service-icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">Enterprise Solutions</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Strategy Card -->
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div
+                class="service-card card h-100 border-0 shadow-sm hover-card"
+              >
+                <div class="card-body text-center p-4">
+                  <div class="service-icon-wrapper mb-4">
+                    <img
+                      src="img/svg/strategy.svg"
+                      alt="Product Strategy"
+                      class="service-icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">Product Strategy</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Consultancy Card -->
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div
+                class="service-card card h-100 border-0 shadow-sm hover-card"
+              >
+                <div class="card-body text-center p-4">
+                  <div class="service-icon-wrapper mb-4">
+                    <img
+                      src="img/svg/consultancy.svg"
+                      alt="Consultancy"
+                      class="service-icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-3">Consultancy</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="button-shape consultancy-our-services-button">
-          Free consultancy
-        </button>
       </section>
 
       <!-- From idea to practice -->
@@ -412,7 +553,7 @@
       <section class="software-trends">
         <div class="d-flex flex-column align-items-center">
           <img
-            class="que-somos-logo d-none d-lg-block d-xl-block"
+            class="about-us-logo d-none d-lg-block d-xl-block"
             src="./icons/mariachi-final.svg"
             alt="mariachi_labs_logo"
           />
@@ -470,7 +611,7 @@
       <section id="contactus" class="software-trends">
         <div class="d-flex flex-column align-items-center">
           <img
-            class="que-somos-logo d-none d-lg-block d-xl-block"
+            class="about-us-logo d-none d-lg-block d-xl-block"
             src="./icons/mariachi-final.svg"
             alt="mariachi_labs_logo"
           />
