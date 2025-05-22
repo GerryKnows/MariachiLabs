@@ -160,186 +160,133 @@
       </section>
 
       <!-- about us section -->
-      <section id="aboutus" class="about-us py-5">
+      <section id="aboutus" class="about-us-new py-5">
         <div class="container">
-          <!-- title and description -->
-          <div class="row mb-5 text-center">
-            <div class="col-12">
-              <img
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                class="about-us-logo mb-4"
-                src="./icons/mariachi-final.svg"
-                alt="mariachi_labs_logo"
-              />
-              <h2
-                class="display-4 fw-bold mb-3"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                What is <span class="pink-accent-bold">Mariachi Labs</span>?
-              </h2>
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <p
-                    class="lead text-muted mb-5"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    Our services for
-                    <span class="pink-accent-bold">development</span> and
-                    <span class="pink-accent-bold">design</span> software is
-                    focused on
-                    <span class="pink-accent-regular"
-                      >offering the best possible solutions</span
-                    >
-                    for your company.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- about us cards -->
-          <!-- user interface card -->
-          <div class="row g-4">
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
-              <div class="card h-100 border-0 shadow-sm hover-card">
-                <div class="card-body text-center p-4">
-                  <div class="icon-wrapper mb-3">
-                    <img
-                      src="img/svg/user_interface.svg"
-                      alt="User Interface"
-                      class="feature-icon"
-                    />
-                  </div>
-                  <h3 class="h4 mb-3">User Interface</h3>
-                  <p class="text-muted mb-0 lead">
-                    Creating
-                    <span class="pink-accent-regular">attractive</span> and
-                    intuitive interfaces that engage your users
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- performance card -->
+          <div class="row align-items-center">
+            <!-- Left Column text -->
             <div
-              class="col-md-4"
-              data-aos="fade-up"
+              class="col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="display-4 fw-bold mb-4">
+                Crafting Digital
+                <span class="pink-accent-bold rotator-container word" id="word"
+                  >Experiences</span
+                >,
+                <br />
+                Fueled by <span class="pink-accent-bold">Innovation</span>.
+              </h2>
+              <p class="lead text-muted mb-5">
+                At Mariachi Labs, we're more than just developers; we are
+                architects of the digital future. We believe in transforming
+                bold ideas into tangible, impactful solutions. Our lab is where
+                creativity meets code, resulting in web applications that not
+                only look stunning but perform flawlessly and offer intuitive
+                user journeys.
+              </p>
+              <div class="features-list mt-5">
+                <div class="feature-item mb-5 d-flex align-items-start">
+                  <img
+                    src="img/svg/user_interface.svg"
+                    alt="Intuitive UI"
+                    class="me-3"
+                    style="width: 35px"
+                  />
+                  <div>
+                    <h4 class="h5 fw-bold mb-1">Intuitive Interfaces</h4>
+                    <p class="text-muted mb-0 fs-5">
+                      Engaging designs that captivate and guide your users
+                      effortlessly.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item mb-5 d-flex align-items-start">
+                  <img
+                    src="img/svg/seo.svg"
+                    alt="Peak Performance"
+                    class="me-3"
+                    style="width: 35px"
+                  />
+                  <div>
+                    <h4 class="h5 fw-bold mb-1">Peak Performance & SEO</h4>
+                    <p class="text-muted mb-0 fs-5">
+                      Lightning-fast applications optimized for maximum reach
+                      and visibility.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-item mb-5 d-flex align-items-start">
+                  <img
+                    src="img/svg/excellence.svg"
+                    alt="Exceptional UX"
+                    class="me-3"
+                    style="width: 35px"
+                  />
+                  <div>
+                    <h4 class="h5 fw-bold mb-1">Exceptional User Experience</h4>
+                    <p class="text-muted mb-0 fs-5">
+                      Crafting meaningful interactions that drive satisfaction
+                      and loyalty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column carousel -->
+            <div
+              class="col-lg-6 mt-5 mt-lg-0"
+              data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <div class="card h-100 border-0 shadow-sm hover-card">
-                <div class="card-body text-center p-4">
-                  <div class="icon-wrapper mb-3">
-                    <img src="img/svg/seo.svg" alt="seo" class="feature-icon" />
-                  </div>
-                  <h3 class="h4 mb-3">Performance</h3>
-                  <p class="text-muted mb-0 lead">
-                    <span class="pink-accent-regular">Fast</span> loading times
-                    and optimized SEO for maximum visibility
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- user experience card -->
-            <div
-              class="col-md-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
-              <div class="card h-100 border-0 shadow-sm hover-card">
-                <div class="card-body text-center p-4">
-                  <div class="icon-wrapper mb-3">
+              <!-- Swiper Carousel -->
+              <div class="swiper-container aboutUsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
                     <img
-                      src="img/svg/excellence.svg"
-                      alt="User Experience"
-                      class="feature-icon"
+                      src="img/modern.webp"
+                      class="d-block w-100 rounded shadow"
+                      alt="Web development project"
                     />
+                    <div class="carousel-caption">
+                      <h5>Web Development</h5>
+                      <p>Responsive modern websites</p>
+                    </div>
                   </div>
-                  <h3 class="h4 mb-3">User Experience</h3>
-                  <p class="text-muted mb-0 lead">
-                    <span class="pink-accent-regular">Excellence</span> in
-                    creating meaningful user experiences
-                  </p>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/enterprise.webp"
+                      class="d-block w-100 rounded shadow"
+                      alt="Enterprise solution project"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Enterprise Solutions</h5>
+                      <p>Scalable business applications</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/ui-ux.webp"
+                      class="d-block w-100 rounded shadow"
+                      alt="UX/UI design project"
+                    />
+                    <div class="carousel-caption">
+                      <h5>UX/UI Design</h5>
+                      <p>Intuitive user experiences</p>
+                    </div>
+                  </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- carousel section -->
-
-      <section
-        class="made-in d-flex flex-column flex-md-row align-items-center"
-      >
-        <div data-aos="fade-right" data-aos-duration="1000">
-          <h2
-            class="secondary-pink-accent-bold align-self-start"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Made in <br />mariachi labs
-          </h2>
-          <p data-aos="fade-up" data-aos-delay="400">
-            Discover all the options we have for you,
-            <span class="secondary-pink-accent-regular"
-              >We are the integral solution you need.</span
-            >
-          </p>
-          <!-- Desktop contact us button -->
-          <button
-            class="button-shape contact-madein-button d-none d-md-block"
-            onclick="window.location.href='#contactus'"
-          >
-            Contact us!
-          </button>
-        </div>
-
-        <!-- Carousel -->
-        <!-- Swiper -->
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="img/achieving-success-in-web-development.webp"
-                class="d-block w-100"
-                alt="Achieving success in web development"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="img/analyst-of-coding.webp"
-                class="d-block w-100"
-                alt="Analyst of coding"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="img/programmer-and-ux-ui-designer-working.webp"
-                class="d-block w-100"
-                alt="Programmer and UX UI designer working"
-              />
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Navigation -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <!-- Mobile contact us button -->
-        <button
-          class="button-shape contact-madein-button d-sm-block d-md-none"
-          onclick="window.location.href='#contactus'"
-        >
-          Contact us!
-        </button>
       </section>
 
       <!-- Interested on our services -->
@@ -1003,11 +950,38 @@
       AOS.init();
     </script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      const words = ["Experiences", "Design", "Development"];
+      const el = document.getElementById("word");
+      let index = 0;
+
+      setInterval(() => {
+        // Salida animada
+        el.classList.remove("rotate-show");
+        el.classList.add("rotate-out");
+
+        setTimeout(() => {
+          // Cambiar texto y rotar hacia adentro
+          index = (index + 1) % words.length;
+          el.textContent = words[index];
+
+          el.classList.remove("rotate-out");
+          el.classList.add("rotate-in");
+
+          setTimeout(() => {
+            el.classList.remove("rotate-in");
+            el.classList.add("rotate-show");
+          }, 50);
+        }, 600); // tiempo igual al de la transición CSS
+      }, 2500); // cada 2.5 segundos
+    </script>
+
+    <script>
+      //  About Us carousel
+      var aboutUsSwiper = new Swiper(".aboutUsSwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 3500,
+          delay: 4000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1019,6 +993,10 @@
           prevEl: ".swiper-button-prev",
         },
         loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
       });
     </script>
   </body>
