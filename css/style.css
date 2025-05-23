@@ -106,63 +106,107 @@ button {
   width: 24rem;
   height: 20rem;
 }
-/*Banner Section*/
-
-.consultancy-button,
-.contact-madein-button,
-.consultancy-our-services-button {
-  color: var(--white);
-  background-color: var(--primaryPink);
-}
-.learn-more-button,
-.signup-button {
-  color: var(--white);
-  background-color: var(--black);
-  font-family: "Swiss";
-  font-weight: 400;
-  @media (min-width: 768px) {
-    color: var(--white);
-    background-color: var(--primaryPink);
-  }
-}
 
 /*Que somos section*/
-.about-us {
+.about-us-new {
   position: relative;
   overflow: hidden;
   margin-top: 4rem;
   margin-bottom: 8rem;
+  padding: 5rem 0;
+}
+
+.about-us-new .features-list {
+  margin-top: 4rem;
+}
+
+.about-us-new .feature-item {
+  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.about-us-new .feature-item:hover {
+  transform: translateX(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-us-new .feature-item img {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.about-us-new .feature-item:hover img {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.aboutUsSwiper {
+  height: 400px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.aboutUsSwiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutUsSwiper .swiper-slide img {
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.aboutUsSwiper .swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+.aboutUsSwiper .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  bottom: 20px;
+}
+
+.aboutUsSwiper .carousel-caption h5 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--primaryPink);
+  margin-bottom: 5px;
+}
+
+.aboutUsSwiper .carousel-caption p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.rotator-container {
+  perspective: 1000px;
+}
+
+.word {
+  display: inline-block;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+
+.rotate-out {
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+.rotate-in {
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
+
+.rotate-show {
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .about-us-logo {
   width: 12rem;
-}
-
-.feature-icon {
-  height: 80px;
-  width: auto;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.hover-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(216, 17, 89, 0.1) !important;
-}
-
-.hover-card:hover .feature-icon {
-  transform: scale(1.1);
-}
-
-.icon-wrapper {
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .description1,
@@ -177,31 +221,6 @@ button {
   }
 }
 
-/* Made in Mariachi section*/
-.made-in {
-  width: 100%;
-  padding: 2.5rem;
-  margin: 8rem auto;
-}
-@media (min-width: 768px) {
-  .made-in {
-    padding-left: 10rem;
-    gap: 5rem;
-  }
-  .made-in > div:first-child {
-    max-width: 450px;
-  }
-}
-.made-in h2 {
-  font-size: 5rem;
-  line-height: 1.1;
-  margin-bottom: 2.5rem;
-}
-.made-in p {
-  font-size: 2.2rem;
-  line-height: 1.6;
-  margin: 3rem 0;
-}
 /*Carousel*/
 /* SwiperJS  */
 .swiper-container {
@@ -253,20 +272,6 @@ button {
 .swiper-pagination-bullet-active {
   background: var(--secondaryPink); /* Active bullet color */
   opacity: 1;
-}
-
-.contact-madein-button {
-  margin-top: 3rem;
-  margin-bottom: 7rem;
-  background-color: var(--primaryPink);
-  color: var(--white);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.contact-madein-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(216, 17, 89, 0.3);
 }
 
 /*Footer*/
@@ -677,35 +682,13 @@ footer {
   }
 }
 
-/* About Us and Services Text Sizes */
-.about-us .display-4,
-.services .display-4 {
-  font-size: 4.5rem;
-}
-
-.about-us .lead {
-  font-size: 1.8rem;
-  line-height: 1.6;
-}
-
-.about-us .h4 {
-  font-size: 2.4rem;
-}
+/* Services Text Sizes */
 
 .services .h5 {
   font-size: 2rem;
 }
 
 @media (max-width: 768px) {
-  .about-us .display-4,
-  .services .display-4 {
-    font-size: 3.5rem;
-  }
-
-  .about-us .h4 {
-    font-size: 2rem;
-  }
-
   .services .h5 {
     font-size: 1.8rem;
   }
