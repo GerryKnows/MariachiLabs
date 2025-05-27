@@ -148,7 +148,7 @@
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
-  color: #fff;
+  color: black;
 }
 
 .containers .box:hover .content {
@@ -158,14 +158,14 @@
 
 .containers .box .content h2 {
   font-size: 2em;
-  color: #fff;
   margin-bottom: 10px;
 }
 
 .containers .box .content p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 10px;
   line-height: 1.4em;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.19);
 }
 
 .containers .box .content a {
