@@ -27,6 +27,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/trends.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- PT font Bayon Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,7 +42,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -49,73 +50,154 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="icons/mariachi-final.svg"
-            alt="Mariachi Labs Logo"
-            width="45"
-            height="34"
-          />
-          <img
-            src="icons/mariachilabs.svg"
-            alt="Mariachi Labs"
-            width="110"
-            height="34"
-            class="ms-2"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav align-items-center gap-4">
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactus">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link language-selector" href="index-es.html">
-                <img
-                  src="icons/i_language.png"
-                  alt="language_icon"
-                  width="20"
-                  height="20"
-                />
-                <span>SPANISH</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- Navbar -->
+    <nav>
+      <div class="osmo-ui">
+        <header class="header">
+          <div class="container is--full">
+            <nav class="nav-row">
+              <div class="nav-row__left">
+                <a href="#" class="nav-logo">
+                  <img
+                    src="./icons/mariachi-final.svg"
+                    alt="Mariachi Labs"
+                    class="nav-logo__icon"
+                  />
+                </a>
+              </div>
+              <div class="nav-row__right">
+                <button role="button" data-menu-toggle="" class="menu-button">
+                  <div class="menu-button-text">
+                    <p class="p-large">Menu</p>
+                    <p class="p-large">Close</p>
+                  </div>
+                  <div class="icon-wrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      viewbox="0 0 16 16"
+                      fill="none"
+                      class="menu-button-icon"
+                    >
+                      <path
+                        d="M7.33333 16L7.33333 -3.2055e-07L8.66667 -3.78832e-07L8.66667 16L7.33333 16Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M16 8.66667L-2.62269e-07 8.66667L-3.78832e-07 7.33333L16 7.33333L16 8.66667Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M6 7.33333L7.33333 7.33333L7.33333 6C7.33333 6.73637 6.73638 7.33333 6 7.33333Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M10 7.33333L8.66667 7.33333L8.66667 6C8.66667 6.73638 9.26362 7.33333 10 7.33333Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M6 8.66667L7.33333 8.66667L7.33333 10C7.33333 9.26362 6.73638 8.66667 6 8.66667Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M10 8.66667L8.66667 8.66667L8.66667 10C8.66667 9.26362 9.26362 8.66667 10 8.66667Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </header>
       </div>
+
+      <section class="cloneable">
+        <div data-nav="closed" class="nav">
+          <div data-menu-toggle="" class="overlay"></div>
+          <nav class="menu">
+            <div class="menu-bg">
+              <div class="bg-panel first"></div>
+              <div class="bg-panel second"></div>
+              <div class="bg-panel"></div>
+            </div>
+            <div class="menu-inner">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a href="/index-es.html" class="menu-link w-inline-block">
+                    <p class="menu-link-heading">Spanish</p>
+                    <p class="eyebrow">01</p>
+                    <div class="menu-link-bg"></div>
+                  </a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#aboutus" class="menu-link w-inline-block">
+                    <p class="menu-link-heading">About us</p>
+                    <p class="eyebrow">02</p>
+                    <div class="menu-link-bg"></div>
+                  </a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#services" class="menu-link w-inline-block">
+                    <p class="menu-link-heading">Services</p>
+                    <p class="eyebrow">03</p>
+                    <div class="menu-link-bg"></div>
+                  </a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#craft" class="menu-link w-inline-block">
+                    <p class="menu-link-heading">Craft</p>
+                    <p class="eyebrow">04</p>
+                    <div class="menu-link-bg"></div>
+                  </a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#contactus" class="menu-link w-inline-block">
+                    <p class="menu-link-heading">Contact</p>
+                    <p class="eyebrow">05</p>
+                    <div class="menu-link-bg"></div>
+                  </a>
+                </li>
+              </ul>
+              <div class="menu-details">
+                <p data-menu-fade="" class="p-small">Socials</p>
+                <div class="socials-row">
+                  <a
+                    data-menu-fade=""
+                    href="https://www.instagram.com/mariachilabs"
+                    target="_blank"
+                    class="p-large text-link"
+                    >Instagram</a
+                  >
+                  <a
+                    data-menu-fade=""
+                    href="https://open.spotify.com/"
+                    target="_blank"
+                    class="p-large text-link"
+                    >Spotify</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
     </nav>
+
     <main>
       <!-- Banner section -->
       <section class="hero hero-banner">
         <div class="hero-container container">
           <div class="hero-top-left" data-aos="fade-right" data-aos-delay="200">
             <p class="lead mb-4 fs-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              sit amet odio eget massa varius egestas. In laoreet ut lacus
-              aliquam pulvinar. Proin lobortis convallis ipsum, a mollis orci
-              porta vel.
+              We're a creative collective of developers, designers, and
+              entrepreneurs who blend art and technology to bring unique digital
+              experiences to life. We build web applications that don't just
+              work, they inspire, connect, and turn ideas into amazing
+              realities.
             </p>
             <button
               class="button-shape contact-banner-button minimalist-button"
@@ -140,17 +222,19 @@
         </div>
 
         <div class="hero-social-icons">
-          <a href="#" class="social-icon-link" aria-label="Facebook"
-            ><img src="img/svg/facebook.svg" alt="Facebook"
-          /></a>
-          <a href="#" class="social-icon-link" aria-label="LinkedIn"
-            ><img src="img/svg/linkedin.svg" alt="LinkedIn"
-          /></a>
-          <a href="#" class="social-icon-link" aria-label="Instagram"
+          <a
+            href="https://www.instagram.com/mariachilabs"
+            target="_blank"
+            class="social-icon-link"
+            aria-label="Instagram"
             ><img src="img/svg/instagram.svg" alt="Instagram"
           /></a>
-          <a href="#" class="social-icon-link" aria-label="WhatsApp"
-            ><img src="img/svg/whatsapp.svg" alt="WhatsApp"
+          <a
+            href="https://open.spotify.com/"
+            target="_blank"
+            class="social-icon-link"
+            aria-label="Spotify"
+            ><img src="img/svg/spotifyy.svg" alt="Spotify"
           /></a>
         </div>
 
@@ -489,64 +573,264 @@
         <!-- end of bento box -->
       </section>
 
-      <!-- Software Trends Section -->
-      <section class="software-trends">
-        <div class="d-flex flex-column align-items-center">
-          <img
-            class="about-us-logo d-none d-lg-block d-xl-block"
-            src="./icons/mariachi-final.svg"
-            alt="mariachi_labs_logo"
-          />
-          <h2 class="text-center mb-5">
-            <span class="pink-accent-bold">Software </span>TRENDS
-          </h2>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <figure
-            class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center"
-          >
-            <img
-              class="thumbnail-size-trends"
-              src="img/programmer-and-ux-ui-designer-working.jpg"
-              alt=""
-            />
-            <figcaption class="text-center">UX/UI for life</figcaption>
-            <button class="button-shape learn-more-button mt-5">
-              Learn More
-            </button>
-          </figure>
-          <figure
-            class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center"
-          >
-            <img
-              class="thumbnail-size-trends"
-              src="img/685164_What_is_Cricut_Page_Mobile_3up_2_2x.png.png"
-              alt=""
-            />
-            <figcaption class="text-center mt-3">
-              Get answers to all your questions
-            </figcaption>
-            <button class="button-shape learn-more-button mt-5">
-              Learn More
-            </button>
-          </figure>
-          <figure
-            class="col-md-4 text-center mb-5 d-flex flex-column justify-content-between align-items-center"
-          >
-            <img
-              class="thumbnail-size-trends"
-              src="img/achieving-success-in-web-development.jpg"
-              alt=""
-            />
-            <figcaption class="text-center mt-3">
-              Which technology is right for you?
-            </figcaption>
-            <button class="button-shape learn-more-button mt-5">
-              Learn More
-            </button>
-          </figure>
+      <!-- ui craft section -->
+      <section class="ui-craft-section" style="position: relative" id="craft">
+        <!-- Elementos decorativos de fondo -->
+        <div
+          style="
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(
+              45deg,
+              rgba(255, 255, 255, 0.1),
+              rgba(255, 255, 255, 0.05)
+            );
+            border-radius: 50%;
+            filter: blur(40px);
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            bottom: 20%;
+            right: 15%;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(
+              45deg,
+              rgba(255, 255, 255, 0.08),
+              rgba(255, 255, 255, 0.03)
+            );
+            border-radius: 50%;
+            filter: blur(30px);
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(
+              45deg,
+              rgba(255, 255, 255, 0.06),
+              rgba(255, 255, 255, 0.02)
+            );
+            border-radius: 50%;
+            filter: blur(25px);
+          "
+        ></div>
+
+        <div class="container">
+          <h1 class="fluid text-uppercase">the craft of ui</h1>
+          <p class="lead">
+            Unlock the art and science of interface development. This isn't just
+            about pushing pixels or following documentation — it's about
+            mastering the tools, understanding the nuances, and shaping
+            experiences with intention.
+          </p>
+          <ul class="ui-craft-list">
+            <li data-active="true">
+              <article>
+                <h3>The Craft</h3>
+                <p>
+                  The company builds refined digital experiences where motion,
+                  interaction, and design systems work in harmony. Every
+                  interface is crafted with precision, creativity, and intent.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 3h12l4 6-10 13L2 9Z" />
+                  <path d="M11 3 8 9l4 13 4-13-3-6" />
+                  <path d="M2 9h20" />
+                </svg>
+                <img src="/img/city.webp" alt="city" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>CSS Animation</h3>
+                <p>
+                  CSS animation is executed with expert-level control—from
+                  subtle transitions to complex, performance-friendly sequences.
+                  The result is interfaces that feel alive and engaging.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M7 3v18" />
+                  <path d="M3 7.5h4" />
+                  <path d="M3 12h18" />
+                  <path d="M3 16.5h4" />
+                  <path d="M17 3v18" />
+                  <path d="M17 7.5h4" />
+                  <path d="M17 16.5h4" />
+                </svg>
+                <img src="/img/forest.webp" alt="forest" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>SVG Filters</h3>
+                <p>
+                  The team leverages SVG filters to create stunning
+                  visuals—flames, noise, distortion, and sticker-like
+                  effects—adding a custom visual identity without sacrificing
+                  performance.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon
+                    points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+                  />
+                </svg>
+                <img src="/img/lake.webp" alt="lake" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Scroll Animation</h3>
+                <p>
+                  Scroll becomes a storytelling tool. The company designs
+                  scroll-driven animations that guide users through immersive
+                  and responsive digital experiences, often without a single
+                  line of JavaScript.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M19 17V5a2 2 0 0 0-2-2H4" />
+                  <path
+                    d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"
+                  />
+                </svg>
+                <img src="/img/rock.webp" alt="rock" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Taming Canvas</h3>
+                <p>
+                  Complex layouts are solved with elegant, native CSS
+                  techniques. Instead of relying on bloated libraries, the team
+                  finds smart solutions tailored to each unique challenge.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                  />
+                </svg>
+                <img src="/img/soil.webp" alt="soil" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Layout Tricks</h3>
+                <p>
+                  Timing is treated as a core design element. From interface
+                  rhythms to asynchronous transitions, the company carefully
+                  shapes the way users perceive and experience time in motion.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"
+                  />
+                  <path d="m14 7 3 3" />
+                  <path d="M5 6v4" />
+                  <path d="M19 14v4" />
+                  <path d="M10 2v2" />
+                  <path d="M7 8H3" />
+                  <path d="M21 16h-4" />
+                  <path d="M11 3H9" />
+                </svg>
+                <img src="/img/tools.webp" alt="tools" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Mastering Time</h3>
+                <p>
+                  It's not all just easings and compositions. Time plays a
+                  crucial part in various UI patterns that might not seem
+                  obvious at first.
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 22h14" />
+                  <path d="M5 2h14" />
+                  <path
+                    d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"
+                  />
+                  <path
+                    d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"
+                  />
+                </svg>
+                <img src="/img/white.webp" alt="white" />
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
+
+      <!-- ui craft section end -->
+
       <!-- Contact Form Section -->
       <section id="contactus" class="software-trends">
         <div class="d-flex flex-column align-items-center">
@@ -997,6 +1281,222 @@
         fadeEffect: {
           crossFade: true,
         },
+      });
+    </script>
+    <script type="module">
+      // Configuración de tema (opcional - puedes comentar si no necesitas el tema switcher)
+      const config = {
+        theme: "system",
+      };
+
+      const update = () => {
+        document.documentElement.dataset.theme = config.theme;
+      };
+
+      update();
+
+      // Funcionalidad principal para la sección UI craft
+      const initializeTrends = () => {
+        const list = document.querySelector(".ui-craft-list");
+        if (list) {
+          const items = list.querySelectorAll("li");
+
+          const setIndex = (event) => {
+            const closest = event.target.closest("li");
+            if (closest) {
+              const index = [...items].indexOf(closest);
+              const cols = new Array(list.children.length)
+                .fill()
+                .map((_, i) => {
+                  items[i].dataset.active = (index === i).toString();
+                  return index === i ? "10fr" : "1fr";
+                })
+                .join(" ");
+              list.style.setProperty("grid-template-columns", cols);
+            }
+          };
+
+          const resync = () => {
+            // Esperar un frame para asegurar que el CSS se ha aplicado
+            requestAnimationFrame(() => {
+              const w = Math.max(
+                ...[...items].map((i) => {
+                  return i.offsetWidth;
+                })
+              );
+              list.style.setProperty("--article-width", w);
+
+              // Forzar recalculación del grid en móvil
+              if (window.innerWidth <= 768) {
+                const activeIndex = [...items].findIndex(
+                  (item) => item.dataset.active === "true"
+                );
+                if (activeIndex >= 0) {
+                  const cols = new Array(list.children.length)
+                    .fill()
+                    .map((_, i) => {
+                      return i === activeIndex ? "10fr" : "1fr";
+                    })
+                    .join(" ");
+                  list.style.setProperty("grid-template-columns", cols);
+                }
+              }
+            });
+          };
+
+          // Inicializar eventos
+          list.addEventListener("focus", setIndex, true);
+          list.addEventListener("click", setIndex);
+          list.addEventListener("pointermove", setIndex);
+          window.addEventListener("resize", resync);
+
+          // Ejecutar resync con delay para asegurar que todo esté cargado
+          setTimeout(resync, 100);
+
+          // Ejecutar resync adicional después de que las imágenes se carguen
+          const images = list.querySelectorAll("img");
+          let loadedImages = 0;
+
+          if (images.length > 0) {
+            images.forEach((img) => {
+              if (img.complete) {
+                loadedImages++;
+              } else {
+                img.addEventListener("load", () => {
+                  loadedImages++;
+                  if (loadedImages === images.length) {
+                    setTimeout(resync, 50);
+                  }
+                });
+              }
+            });
+
+            if (loadedImages === images.length) {
+              setTimeout(resync, 50);
+            }
+          }
+
+          // Backup: ejecutar resync después de 500ms como fallback
+          setTimeout(resync, 500);
+        }
+      };
+
+      // Inicializar cuando el DOM esté completamente cargado
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initializeTrends);
+      } else {
+        initializeTrends();
+      }
+    </script>
+    <script>
+      gsap.registerPlugin(CustomEase);
+
+      gsap.set(".nav", { display: "none" });
+
+      CustomEase.create("main", "0.65, 0.01, 0.05, 0.99");
+
+      gsap.defaults({
+        ease: "main",
+        duration: 0.7,
+      });
+
+      function initMenu() {
+        let navWrap = document.querySelector(".nav");
+        let state = navWrap.getAttribute("data-nav");
+        let overlay = navWrap.querySelector(".overlay");
+        let menu = navWrap.querySelector(".menu");
+        let bgPanels = navWrap.querySelectorAll(".bg-panel");
+        let menuToggles = document.querySelectorAll("[data-menu-toggle]");
+        let menuLinks = navWrap.querySelectorAll(".menu-link");
+        let fadeTargets = navWrap.querySelectorAll("[data-menu-fade]");
+        let menuButton = document.querySelector(".menu-button");
+        let menuButtonTexts = menuButton.querySelectorAll("p");
+        let menuButtonIcon = menuButton.querySelector(".menu-button-icon");
+
+        let tl = gsap.timeline();
+
+        const openNav = () => {
+          navWrap.setAttribute("data-nav", "open");
+
+          tl.clear()
+            .set(navWrap, { display: "block" })
+            .set(menu, { xPercent: 0 }, "<")
+            .fromTo(
+              menuButtonTexts,
+              { yPercent: 0 },
+              { yPercent: -100, stagger: 0.2 }
+            )
+            .fromTo(menuButtonIcon, { rotate: 0 }, { rotate: 315 }, "<")
+            .fromTo(overlay, { autoAlpha: 0 }, { autoAlpha: 1 }, "<")
+            .fromTo(
+              bgPanels,
+              { xPercent: 101 },
+              { xPercent: 0, stagger: 0.12, duration: 0.575 },
+              "<"
+            )
+            .fromTo(
+              menuLinks,
+              { yPercent: 140, rotate: 10 },
+              { yPercent: 0, rotate: 0, stagger: 0.05 },
+              "<+=0.35"
+            )
+            .fromTo(
+              fadeTargets,
+              { autoAlpha: 0, yPercent: 50 },
+              { autoAlpha: 1, yPercent: 0, stagger: 0.04 },
+              "<+=0.2"
+            );
+        };
+
+        const closeNav = () => {
+          navWrap.setAttribute("data-nav", "closed");
+
+          tl.clear()
+            .to(overlay, { autoAlpha: 0 })
+            .to(menu, { xPercent: 120 }, "<")
+            .to(menuButtonTexts, { yPercent: 0 }, "<")
+            .to(menuButtonIcon, { rotate: 0 }, "<")
+            .set(navWrap, { display: "none" });
+        };
+
+        // Toggle menu open / close depending on its current state
+        menuToggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            state = navWrap.getAttribute("data-nav");
+            if (state === "open") {
+              closeNav();
+            } else {
+              openNav();
+            }
+          });
+        });
+
+        // Close menu when clicking on internal navigation links
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const href = link.getAttribute("href");
+            // Only close for internal links (starting with #)
+            if (href && href.startsWith("#")) {
+              setTimeout(() => {
+                closeNav();
+              }, 200); // Small delay for better UX
+            }
+          });
+        });
+
+        // If menu is open, you can close it using the "escape" key
+        document.addEventListener("keydown", (e) => {
+          if (
+            e.key === "Escape" &&
+            navWrap.getAttribute("data-nav") === "open"
+          ) {
+            closeNav();
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initMenu();
       });
     </script>
   </body>
