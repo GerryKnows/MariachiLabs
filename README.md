@@ -21,12 +21,14 @@ The site is available in English and Spanish.
 - **HTML5:** For the semantic structure of the content.
 - **CSS3:** For styles and visual presentation, including a custom `style.css` file.
 - **JavaScript:** For interactivity and dynamic functionalities.
+  - **GSAP:** A wildly robust JavaScript animation library.
   - **jQuery:** JavaScript library to simplify DOM manipulation and event handling.
   - **Bootstrap (v5.3.5):** Frontend framework for responsive design and pre-built components.
   - **AOS (Animate On Scroll):** Library to animate elements on scroll.
   - **SwiperJS:** Library to create touch sliders and carousels.
   - **Google Fonts:** For custom typography.
   - **Google reCAPTCHA:** For spam protection in forms.
+  - **Font Awesome:** Icon library for scalable vector icons and social media icons.
 
 ### Backend (for the contact form):
 

@@ -16,12 +16,10 @@
 /* ------- Osmo [https://osmo.supply/] ------- */
 /*  Osmo UI: https://slater.app/10324/23333.css 
  */
-
-a,
-button {
+.custom-cursor {
   cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b212e6b71494aa67ff_cursor-pointer%402x.svg")
       12 0,
-    pointer;
+    pointer !important;
 }
 
 .osmo-ui {
