@@ -1,0 +1,351 @@
+/* Modern Contact Form Styles */
+.modern-contact-section {
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.contact-header {
+  text-align: center;
+  margin-bottom: 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-logo {
+  width: 10rem;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.contact-title {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-subtitle {
+  font-size: 1.6rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Form Container */
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.modern-contact-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: 0 25px 50px 12px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-contact-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+/* Input Styles */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.modern-input {
+  width: 100%;
+  padding: 1.5rem 1rem 1rem 3.5rem;
+  border: 2px solid gray;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  outline: none;
+}
+
+.modern-input:focus {
+  border-color: var(--primaryPink);
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(216, 17, 89, 0.15);
+}
+
+.modern-input:focus + .modern-label {
+  transform: translateY(-2.5rem) scale(0.85);
+  color: var(--primaryPink);
+}
+
+.modern-input:not(:placeholder-shown) + .modern-label {
+  transform: translateY(-2.5rem) scale(0.85);
+  color: #666;
+}
+
+.modern-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Validation Styles */
+.modern-input:valid {
+  border-color: #10b981;
+}
+
+.modern-input:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+}
+
+.valid-feedback {
+  color: #10b981;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.invalid-feedback {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.modern-input:valid ~ .valid-feedback {
+  display: block;
+}
+
+.modern-input:invalid:not(:placeholder-shown) ~ .invalid-feedback {
+  display: block;
+}
+
+/* Form Footer */
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Checkbox Styles */
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.modern-checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.checkbox-custom i {
+  font-size: 12px;
+  opacity: 0;
+  transform: scale(0);
+  color: white;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modern-checkbox:checked + .checkbox-label .checkbox-custom {
+  background: var(--primaryPink);
+  border-color: var(--primaryPink);
+  transform: scale(1.1);
+}
+
+.modern-checkbox:checked + .checkbox-label .checkbox-custom i {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checkbox-label {
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+/* reCAPTCHA Wrapper */
+.recaptcha-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+/* Submit Button */
+.modern-submit-btn {
+  position: relative;
+  background: linear-gradient(135deg, var(--primaryPink), var(--secondaryPink));
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+  min-width: 200px;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(216, 17, 89, 0.3);
+}
+
+.modern-submit-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(216, 17, 89, 0.4);
+}
+
+.modern-submit-btn:active {
+  transform: translateY(-1px);
+}
+
+.modern-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-icon {
+  transition: transform 0.3s ease;
+}
+
+.modern-submit-btn:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+.btn-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.modern-submit-btn:hover .btn-shine {
+  left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modern-contact-section {
+    padding: 4rem 0;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .modern-contact-form {
+    padding: 2.5rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-logo {
+    width: 8rem;
+  }
+
+  .checkbox-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .modern-submit-btn {
+    width: 100%;
+  }
+
+  .bg-blur {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .modern-contact-form {
+    padding: 2rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .modern-input {
+    padding: 1.25rem 1rem 1rem 3rem;
+  }
+
+  .modern-label {
+    left: 3rem;
+    top: 1.25rem;
+  }
+
+  .input-icon {
+    left: 0.75rem;
+  }
+}

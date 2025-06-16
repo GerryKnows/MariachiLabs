@@ -45,6 +45,12 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/contact-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -62,12 +68,16 @@
                   <img
                     src="./icons/mariachi-final.svg"
                     alt="Mariachi Labs"
-                    class="nav-logo__icon"
+                    class="nav-logo__icon custom-cursor"
                   />
                 </a>
               </div>
               <div class="nav-row__right">
-                <button role="button" data-menu-toggle="" class="menu-button">
+                <button
+                  role="button"
+                  data-menu-toggle=""
+                  class="menu-button custom-cursor"
+                >
                   <div class="menu-button-text">
                     <p class="p-large">Menú</p>
                     <p class="p-large">Cerrar</p>
@@ -125,35 +135,50 @@
             <div class="menu-inner">
               <ul class="menu-list">
                 <li class="menu-list-item">
-                  <a href="/index.html" class="menu-link w-inline-block">
+                  <a
+                    href="/index.html"
+                    class="menu-link w-inline-block custom-cursor"
+                  >
                     <p class="menu-link-heading">Inglés</p>
                     <p class="eyebrow">01</p>
                     <div class="menu-link-bg"></div>
                   </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="#aboutus" class="menu-link w-inline-block">
+                  <a
+                    href="#aboutus"
+                    class="menu-link w-inline-block custom-cursor"
+                  >
                     <p class="menu-link-heading">Nosotros</p>
                     <p class="eyebrow">02</p>
                     <div class="menu-link-bg"></div>
                   </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="#services" class="menu-link w-inline-block">
+                  <a
+                    href="#services"
+                    class="menu-link w-inline-block custom-cursor"
+                  >
                     <p class="menu-link-heading">Servicios</p>
                     <p class="eyebrow">03</p>
                     <div class="menu-link-bg"></div>
                   </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="#craft" class="menu-link w-inline-block">
+                  <a
+                    href="#craft"
+                    class="menu-link w-inline-block custom-cursor"
+                  >
                     <p class="menu-link-heading">Arte UI</p>
                     <p class="eyebrow">04</p>
                     <div class="menu-link-bg"></div>
                   </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="#contactus" class="menu-link w-inline-block">
+                  <a
+                    href="#contactus"
+                    class="menu-link w-inline-block custom-cursor"
+                  >
                     <p class="menu-link-heading">Contacto</p>
                     <p class="eyebrow">05</p>
                     <div class="menu-link-bg"></div>
@@ -199,12 +224,12 @@
               solo funcionan, sino que inspiran, conectan y convierten ideas en
               realidades increíbles.
             </p>
-            <button
+            <a
+              href="#aboutus"
               class="button-shape contact-banner-button minimalist-button"
-              onclick="window.location.href='#contactus'"
             >
-              Contáctanos
-            </button>
+              Conoce más
+            </a>
           </div>
 
           <div class="hero-center" data-aos="zoom-in" data-aos-delay="100">
@@ -806,339 +831,258 @@
       <!-- fin de la sección ui craft -->
 
       <!-- Contact Form Section -->
-      <section id="contactus" class="software-trends">
-        <div class="d-flex flex-column align-items-center">
-          <img
-            class="about-us-logo d-none d-lg-block d-xl-block"
-            src="./icons/mariachi-final.svg"
-            alt="logo_mariachi_labs"
-          />
-          <h2 class="text-center mb-5">
-            <span class="pink-accent-bold">CONTÁCTA</span>NOS
-          </h2>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-center">
-          <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-            <div class="container h-100">
-              <div
-                class="row d-flex justify-content-center align-items-center h-100"
-              >
-                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                  <form class="was-validated" id="form" novalidate>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="name">Nombre:</label>
-                          <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            class="form-control form-control-lg"
-                            placeholder="Juan Mariachi"
-                            required
-                          />
-                          <div class="valid-feedback">
-                            Necesitamos continuar.
-                          </div>
-                          <div class="invalid-feedback">
-                            Por favor, dinos tu nombre.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="email"
-                            >Correo Electrónico:</label
-                          >
-                          <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            class="form-control form-control-lg"
-                            placeholder="tu@correo.com"
-                            required
-                          />
-                          <div class="valid-feedback">Casi listos.</div>
-                          <div class="invalid-feedback">
-                            Por favor, déjanos tu correo electrónico.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <section id="contactus" class="modern-contact-section">
+        <div class="container">
+          <div
+            class="contact-header"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              class="contact-logo d-none d-lg-block"
+              src="./icons/mariachi-final.svg"
+              alt="logo_mariachi_labs"
+            />
+            <h2 class="contact-title">
+              <span class="pink-accent-bold">CONTÁCTA</span>NOS
+            </h2>
+            <p class="contact-subtitle lead">
+              ¿Listos para convertir tus ideas en realidad? Construyamos algo
+              increíble juntos.
+            </p>
+          </div>
 
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="phone">Celular:</label>
-                          <input
-                            type="number"
-                            id="phone"
-                            name="phone"
-                            class="form-control form-control-lg"
-                            placeholder="(000)0000000"
-                            required
-                          />
-                          <div class="invalid-feedback">
-                            Por favor, déjanos tu número de celular.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="message"
-                            >Mensaje:</label
-                          >
-                          <textarea
-                            type="number"
-                            id="message"
-                            name="message"
-                            class="form-control form-control-lg"
-                            rows="4"
-                            placeholder="Cuéntanos cómo podemos ayudarte."
-                            required
-                          ></textarea>
-                          <div class="invalid-feedback">
-                            Por favor, déjanos un mensaje.
-                          </div>
-                        </div>
-                      </div>
+          <div
+            class="contact-form-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <form class="modern-contact-form" id="form" novalidate>
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="form-group input-wrapper position-relative">
+                    <label for="name" class="ps-2 fs-5">
+                      Nombre Completo
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control modern-input"
+                      placeholder="Por favor, dinos tu nombre."
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">
+                      Por favor, ingresa un nombre válido.
                     </div>
-
-                    <div class="form-check d-flex justify-content-center mb-5">
-                      <div
-                        class="form-check d-flex justify-content-center mb-5"
-                      >
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            name="check"
-                            value="true"
-                            id="check"
-                            required
-                          />
-                          <label class="form-check-label" for="check">
-                            Al marcar esto, aceptas nuestros términos.
-                          </label>
-                          <div class="invalid-feedback">
-                            Acepta los términos.
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group input-wrapper position-relative">
+                    <label for="email" class="ps-2 fs-5">
+                      Correo Electrónico
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control modern-input"
+                      placeholder="Por favor, ingresa tu correo electrónico."
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">
+                      Por favor, proporciona un correo válido.
                     </div>
-                    <div class="form-check d-flex justify-content-center mb-5">
-                      <div
-                        class="g-recaptcha"
-                        data-sitekey="6LdW5yArAAAAAGx1bk0hkB5WDLmVO8NsZgWH3ssM"
-                        data-callback="callback"
-                      ></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group input-wrapper position-relative">
+                    <label for="phone" class="ps-2 fs-5">
+                      Número de Teléfono
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control modern-input"
+                      placeholder="Por favor, ingresa tu número de teléfono."
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">
+                      Por favor, ingresa un número de teléfono válido.
                     </div>
-                    <div class="d-flex justify-content-center">
-                      <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                          <button
-                            class="button-shape button-shape-wrap signup-button mb-5"
-                            id="submit-form"
-                            onclick="submitForm(event)"
-                            disabled
-                          >
-                            <div>Enviar Mensaje</div>
-                          </button>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group input-wrapper position-relative">
+                    <label for="message" class="ps-2 fs-5">
+                      Cuéntanos sobre tu proyecto
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control modern-input modern-textarea"
+                      placeholder="Por favor, comparte los detalles de tu proyecto."
+                      rows="5"
+                      required
+                    ></textarea>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">
+                      Por favor, ingresa un mensaje válido.
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="form-footer mt-4">
+                <div class="form-check checkbox-wrapper mb-3">
+                  <input
+                    class="form-check-input modern-checkbox"
+                    type="checkbox"
+                    name="check"
+                    value="true"
+                    id="check"
+                    required
+                  />
+                  <label class="form-check-label checkbox-label" for="check">
+                    <span class="checkbox-custom">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    Acepto los términos y condiciones y la política de
+                    privacidad
+                  </label>
+                  <div class="invalid-feedback">
+                    Por favor, acepta nuestros términos.
+                  </div>
+                </div>
+                <div class="recaptcha-wrapper mb-3">
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LdW5yArAAAAAGx1bk0hkB5WDLmVO8NsZgWH3ssM"
+                    data-callback="callback"
+                  ></div>
+                  <div id="g-recaptcha-error"></div>
+                </div>
+                <button
+                  class="btn modern-submit-btn"
+                  id="submit-form"
+                  type="submit"
+                  onclick="submitForm(event)"
+                  disabled
+                >
+                  <span class="btn-text">Enviar Mensaje</span>
+                  <i class="fa-regular fa-paper-plane btn-icon"></i>
+                  <div class="btn-shine"></div>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
       <!-- Footer -->
-      <section class="footer-dropdown d-md-flex">
-        <!-- <<About Mariachi -->
-        <div class="accordion offset-1" id="accordionAboutMariachi">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button pink-accent-regular collapsed d-md-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseAboutMariachi"
-                aria-expanded="true"
-                aria-controls="collapseAboutMariachi"
-              >
-                Acerca de Mariachi Labs
-              </button>
-              <p class="d-none d-md-block pink-accent-regular">
-                Acerca de Mariachi Labs
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Logo and Company Info -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="footer-brand">
+                <img
+                  src="./icons/mariachi-final.svg"
+                  alt="Mariachi Labs"
+                  class="footer-logo mb-3"
+                />
+                <p class="footer-description">
+                  Somos un colectivo creativo de desarrolladores, diseñadores y
+                  emprendedores que fusionamos arte y tecnología para dar vida a
+                  experiencias digitales únicas.
+                </p>
+                <div class="footer-location">
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  <span>Chihuahua, Chih. MX</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-2 col-md-6 mb-4">
+              <h5 class="footer-title">Servicios</h5>
+              <ul class="footer-links">
+                <li><a href="#services">Desarrollo Web</a></li>
+                <li><a href="#services">Aplicaciones Móviles</a></li>
+                <li><a href="#services">Diseño UX/UI</a></li>
+                <li><a href="#services">E-commerce</a></li>
+                <li><a href="#services">Aplicaciones Multiplataforma</a></li>
+              </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg-2 col-md-6 mb-4">
+              <h5 class="footer-title">Empresa</h5>
+              <ul class="footer-links">
+                <li><a href="#aboutus">Nosotros</a></li>
+                <li><a href="#craft">Nuestro Proceso</a></li>
+                <li><a href="#contactus">Contacto</a></li>
+                <li><a href="#">Miembros del Consejo</a></li>
+              </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg-2 col-md-6 mb-4">
+              <h5 class="footer-title">Legal</h5>
+              <ul class="footer-links">
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+              </ul>
+            </div>
+
+            <!-- Social & Newsletter -->
+            <div class="col-lg-2 col-md-12 mb-4">
+              <h5 class="footer-title">Mantente conectado</h5>
+              <p class="footer-social-text">
+                Síguenos para actualizaciones e inspiración
               </p>
-            </h2>
-
-            <div
-              id="collapseAboutMariachi"
-              class="collapse d-md-block"
-              data-bs-parent="#accordionAboutMariachi"
-            >
-              <div class="accordion-body">
-                <ul>
-                  <li class="dropdown-item"><a href="#">Acerca de</a></li>
-                  <hr />
-                  <!-- <li class="dropdown-item"><a href="#">Press</a></li>
-                <hr> -->
-                  <!-- <li class="dropdown-item"><a href="#">Our Blog</a></li>
-                <hr> -->
-                  <li class="dropdown-item"><a href="#">Liderazgo</a></li>
-                  <hr />
-                  <li class="dropdown-item">
-                    <a href="#">Miembros de la Junta</a>
-                  </li>
-                  <hr />
-                  <!-- <li class="dropdown-item"><a href="#">Careers</a></li>
-                <hr> -->
-                  <!-- <li class="dropdown-item"><a href="#">Investor Relations</a></li>
-                <hr> -->
-                  <li class="dropdown-item">
-                    <a href="#contactus">Contáctanos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- >>About Mariachi -->
-
-        <div>
-          <!--Separator-->
-          <!-- <<Products -->
-          <div class="accordion offset-1" id="accordionProducts">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button pink-accent-regular collapsed d-md-none"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseProducts"
-                  aria-expanded="true"
-                  aria-controls="collapseProducts"
+              <div class="footer-social-links">
+                <a
+                  href="https://www.instagram.com/mariachilabs"
+                  target="_blank"
+                  class="footer-social-link"
+                  aria-label="Instagram"
                 >
-                  Productos
-                </button>
-                <p class="d-none d-md-block pink-accent-regular">Productos</p>
-              </h2>
-
-              <div
-                id="collapseProducts"
-                class="collapse d-md-block"
-                data-bs-parent="#accordionProducts"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li class="dropdown-item">
-                      <a href="#"
-                        >Desarrollo de aplicaciones móviles (iOS y Android)</a
-                      >
-                    </li>
-                    <hr />
-                    <li class="dropdown-item">
-                      <a href="#">Desarrollo web</a>
-                    </li>
-                    <hr />
-                    <li class="dropdown-item">
-                      <a href="#">Comercio electrónico</a>
-                    </li>
-                    <hr />
-                    <li class="dropdown-item">
-                      <a href="#">Desarrollo de aplicaciones multiplataforma</a>
-                    </li>
-                    <hr />
-                    <li class="dropdown-item">
-                      <a href="#">Sistema de diseño UX/UI</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- >>Products -->
-
-          <!-- <<Policies -->
-          <div class="accordion offset-1" id="accordionAboutPolicies">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button pink-accent-regular collapsed d-md-none"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapsePolicies"
-                  aria-expanded="true"
-                  aria-controls="collapsePolicies"
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://open.spotify.com/"
+                  target="_blank"
+                  class="footer-social-link"
+                  aria-label="Spotify"
                 >
-                  Políticas
-                </button>
-                <p class="d-none d-md-block pink-accent-regular">Políticas</p>
-              </h2>
-
-              <div
-                id="collapsePolicies"
-                class="collapse d-md-block"
-                data-bs-parent="#accordionAboutPolicies"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li class="dropdown-item"><a href="#">Legal</a></li>
-                    <hr />
-                    <li class="dropdown-item"><a href="#">Accesibilidad</a></li>
-                    <hr />
-                    <li class="dropdown-item">
-                      <a href="#">Política de Privacidad</a>
-                    </li>
-                  </ul>
-                </div>
+                  <i class="fab fa-spotify"></i>
+                </a>
               </div>
             </div>
           </div>
-          <!-- >>Policies -->
-        </div>
-        <!--Separator-->
 
-        <div class="footer-links">
-          <h2 class="pink-accent-bold mb-4">
-            Mantente en contacto — te enviaremos ofertas y más.
-          </h2>
-          <!-- <button class="button-shape button-shape-wrap signup-button mb-5">
-          <div>Sign Up</div>
-        </button> -->
-          <div class="d-flex gap-4">
-            <!--<a href="https://facebook.com"><img src="icons/social_media/i_facebook.png" alt="facebook_link"></a>-->
-            <a href="https://www.instagram.com/mariachilabs"
-              ><img
-                src="icons/social_media/i_instagram.png"
-                alt="enlace_instagram"
-            /></a>
-            <!--<a href="https://pinterest.com"><img src="icons/social_media/i_pinterest.png" alt="pinterest_link"></a>
-        <a href="https://youtube.com"><img src="icons/social_media/i_YouTube.png" alt="youtube_link"></a>
-        <a href="https://linkedin.com"><img src="icons/social_media/i_linkedin.png" alt="linkedin_link"></a>-->
-          </div>
-          <button class="button-shape button-shape-wrap mt-4">
-            <div>
-              <img src="icons/i_language.png" alt="ícono_idioma" /> INGLÉS
-              <img src="icons/i_link.png" alt="ícono_enlace" />
+          <hr class="footer-divider" />
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <p class="footer-copyright">
+                  © 2025 Mariachi Labs. Todos los derechos reservados.
+                </p>
+              </div>
+              <div class="col-md-4 text-md-end">
+                <p class="footer-made-with">Hecho con ❤️ en México</p>
+              </div>
             </div>
-          </button>
+          </div>
         </div>
-      </section>
+      </footer>
     </main>
-
-    <footer
-      class="d-flex flex-column flex-md-row mb-4 mt-5 justify-content-between"
-    >
-      <p class="fw-bold">
-        © 2023 Mariachi Labs. Todos los derechos reservados.
-      </p>
-      <p>Chihuahua, Chih. MX</p>
-      <!-- <p>10855 Enrique Segoviano, MX 84095</p> -->
-    </footer>
     <script type="text/javascript">
       function callback() {
         const submitButton = document.getElementById("submit-form");
@@ -1162,6 +1106,17 @@
       async function submitForm(e) {
         e.preventDefault();
         let form = document.querySelector("form");
+
+        // Check form validity
+        if (!form.checkValidity()) {
+          // Add Bootstrap validation classes if form is invalid
+          form.classList.add("was-validated");
+          return;
+        }
+
+        // Remove validation classes if form is valid
+        form.classList.remove("was-validated");
+
         let dataObj = Object.fromEntries(new FormData(form).entries());
 
         let captcha = grecaptcha.getResponse();
@@ -1198,6 +1153,9 @@
                 );
               } else {
                 alert("Mensaje enviado con éxito. Gracias por contactarnos.");
+                // Reset form and remove validation classes on success
+                form.reset();
+                form.classList.remove("was-validated");
               }
             })
             .catch((error) => {
@@ -1222,7 +1180,7 @@
       AOS.init();
     </script>
     <script>
-      const words = ["Experiencias", "Diseño", "Desarrollo"];
+      const words = ["Experiencias", "Diseño", "Ideas", "Soluciones"];
       const el = document.getElementById("word");
       let index = 0;
 
