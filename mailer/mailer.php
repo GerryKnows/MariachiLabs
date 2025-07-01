@@ -15,6 +15,9 @@ header('Content-Type: application/json');
     // $myPersonalEmail = "balamcantzin@gmail.com";
     $myPersonalEmail = "hola@mariachilabs.mx";
     
+    // reCAPTCHA configuration
+    $recaptcha_secret = "6LdJRGQrAAAAAL7CQBFHZC5HkEYBTo0Iy-R2a_z_";
+    
     $externalMailHost = "smtp.ionos.mx";
     $externalMailAddress = "noreply@mariachilabs.mx";
     $externalMailSMTPAuth = true;
@@ -31,6 +34,31 @@ header('Content-Type: application/json');
     $response = ['message'=>"Hubo un problema para enviar el correo", 'status'=>"error" ];
     if(isset($_POST['data']) && $_POST['data']['submit']) {
         $data = $_POST['data'];
+        
+        // Verify reCAPTCHA
+        if (!isset($data['captcha_response']) || empty($data['captcha_response'])) {
+            $response['message'] = "Por favor, completa la verificación reCAPTCHA";
+            echo json_encode($response);
+            die();
+        }
+        
+        // Verify the captcha response with Google
+        $verify_url = 'https://www.google.com/recaptcha/api/siteverify';
+        $verify_data = array(
+            'secret' => $recaptcha_secret,
+            'response' => $data['captcha_response'],
+            'remoteip' => $_SERVER['REMOTE_ADDR']
+        );
+        
+        $verify_response = file_get_contents($verify_url . '?' . http_build_query($verify_data));
+        $verify_result = json_decode($verify_response, true);
+        
+        if (!$verify_result['success']) {
+            $response['message'] = "Verificación reCAPTCHA fallida. Por favor, inténtalo de nuevo";
+            echo json_encode($response);
+            die();
+        }
+        
         $subject = "Contacto de mariachilabs.mx por {$data['nombre']}";
         $mail = new PHPMailer(true);
 

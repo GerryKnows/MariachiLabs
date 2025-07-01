@@ -197,7 +197,7 @@
                   >
                   <a
                     data-menu-fade=""
-                    href="https://open.spotify.com/"
+                    href="https://open.spotify.com/user/mariachilabs"
                     target="_blank"
                     class="p-large text-link"
                     >Spotify</a
@@ -256,7 +256,7 @@
             ><img src="img/svg/instagram.svg" alt="Instagram"
           /></a>
           <a
-            href="https://open.spotify.com/"
+            href="https://open.spotify.com/user/mariachilabs"
             target="_blank"
             class="social-icon-link"
             aria-label="Spotify"
@@ -924,7 +924,7 @@
                 <div class="recaptcha-wrapper mb-3">
                   <div
                     class="g-recaptcha"
-                    data-sitekey="6LdW5yArAAAAAGx1bk0hkB5WDLmVO8NsZgWH3ssM"
+                    data-sitekey="6Ld6bnMrAAAAAEImkX7yfYthSSX_tPTQ8jKMTL-o"
                     data-callback="callback"
                   ></div>
                   <div id="g-recaptcha-error"></div>
@@ -1018,7 +1018,7 @@
                   <i class="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="https://open.spotify.com/"
+                  href="https://open.spotify.com/user/mariachilabs"
                   target="_blank"
                   class="footer-social-link"
                   aria-label="Spotify"
@@ -1098,8 +1098,8 @@
               phone: dataObj.phone,
               mensaje: dataObj.message,
               check: dataObj.check,
-              // captcha_response:captcha,
-              // submittedAt:Date.now(),
+              captcha_response: captcha,
+              submittedAt: Date.now(),
               submit: true,
             },
           };
@@ -1116,15 +1116,33 @@
             .then((data) => {
               if (data.status == "error") {
                 alert("We have and error on sending message:" + data.message);
+                // Reset reCAPTCHA on error
+                grecaptcha.reset();
+                // Disable submit button again until new captcha is completed
+                document
+                  .getElementById("submit-form")
+                  .setAttribute("disabled", "true");
               } else {
                 alert("Message sent successfully. Thank you for contact us");
                 // Reset form and remove validation classes on success
                 form.reset();
                 form.classList.remove("was-validated");
+                // Reset reCAPTCHA
+                grecaptcha.reset();
+                // Disable submit button again until new captcha is completed
+                document
+                  .getElementById("submit-form")
+                  .setAttribute("disabled", "true");
               }
             })
             .catch((error) => {
               alert("We have an error");
+              // Reset reCAPTCHA on error
+              grecaptcha.reset();
+              // Disable submit button again until new captcha is completed
+              document
+                .getElementById("submit-form")
+                .setAttribute("disabled", "true");
             });
         }
       }
