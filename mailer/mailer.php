@@ -3,33 +3,68 @@ header("Access-Control-Allow-Headers: Access-Control-Allow-Credentials, Content-
 header("Access-Control-Allow-Origin: https://mariachilabs.mx");
 header("Access-Control-Allow-Methods: POST");
 header('Content-Type: application/json');
+
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 0); // Don't display errors to user
+ini_set('log_errors', 1);
+
 /**
  * source: 
  * https://www.awardspace.com/kb/create-contact-form-using-phpmailer/
  * https://mailtrap.io/blog/php-email-contact-form/
  * 
  */
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+try {
 
     // $myPersonalEmail = "balamcantzin@gmail.com";
     $myPersonalEmail = "hola@mariachilabs.mx";
     
     // reCAPTCHA configuration
-    $recaptcha_secret = "6LdJRGQrAAAAAL7CQBFHZC5HkEYBTo0Iy-R2a_z_";
+    $recaptcha_secret = "6LfrmnMrAAAAAPKAFpZKoafokGIHGcxqerFQNh0R";
     
     $externalMailHost = "smtp.ionos.mx";
     $externalMailAddress = "noreply@mariachilabs.mx";
     $externalMailSMTPAuth = true;
     $externalMailUsername = "m79057095-153101793";
     $externalMailPassword = "hE5NHWKSwGTzDEZ";
-    $externalMailSMTPSecure = "tls";
-    $externalMailPort = 25;
+    $externalMailSMTPSecure = "ssl";
+    $externalMailPort = 465;
 
+    // Check if PHPMailer files exist
+    $phpmailer_files = [
+        './PHPMailer-master/src/Exception.php',
+        './PHPMailer-master/src/PHPMailer.php',
+        './PHPMailer-master/src/SMTP.php'
+    ];
+    
+    foreach ($phpmailer_files as $file) {
+        if (!file_exists($file)) {
+            echo json_encode(['message' => 'Error: Archivo PHPMailer no encontrado: ' . $file, 'status' => 'error']);
+            die();
+        }
+    }
+    
     require './PHPMailer-master/src/Exception.php';
     require './PHPMailer-master/src/PHPMailer.php';
     require './PHPMailer-master/src/SMTP.php';
-    $_POST = json_decode(file_get_contents('php://input'), true);
+    
+    // Get and decode JSON input
+    $json_input = file_get_contents('php://input');
+    if ($json_input === false) {
+        echo json_encode(['message' => 'Error al leer datos de entrada', 'status' => 'error']);
+        die();
+    }
+    
+    $_POST = json_decode($json_input, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        echo json_encode(['message' => 'Error al decodificar JSON: ' . json_last_error_msg(), 'status' => 'error']);
+        die();
+    }
 
     $response = ['message'=>"Hubo un problema para enviar el correo", 'status'=>"error" ];
     if(isset($_POST['data']) && $_POST['data']['submit']) {
@@ -42,7 +77,7 @@ header('Content-Type: application/json');
             die();
         }
         
-        // Verify the captcha response with Google
+        // Verify the captcha response with Google using cURL
         $verify_url = 'https://www.google.com/recaptcha/api/siteverify';
         $verify_data = array(
             'secret' => $recaptcha_secret,
@@ -50,11 +85,42 @@ header('Content-Type: application/json');
             'remoteip' => $_SERVER['REMOTE_ADDR']
         );
         
-        $verify_response = file_get_contents($verify_url . '?' . http_build_query($verify_data));
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $verify_url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($verify_data));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        
+        $verify_response = curl_exec($ch);
+        $curl_error = curl_error($ch);
+        $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+        
+        if ($curl_error) {
+            $response['message'] = "Error de conexión con reCAPTCHA: " . $curl_error;
+            echo json_encode($response);
+            die();
+        }
+        
+        if ($http_code !== 200) {
+            $response['message'] = "Error del servidor reCAPTCHA. Código HTTP: " . $http_code;
+            echo json_encode($response);
+            die();
+        }
+        
         $verify_result = json_decode($verify_response, true);
         
-        if (!$verify_result['success']) {
-            $response['message'] = "Verificación reCAPTCHA fallida. Por favor, inténtalo de nuevo";
+        if ($verify_result === null) {
+            $response['message'] = "Error al procesar respuesta de reCAPTCHA";
+            echo json_encode($response);
+            die();
+        }
+        
+        if (!isset($verify_result['success']) || !$verify_result['success']) {
+            $error_codes = isset($verify_result['error-codes']) ? implode(', ', $verify_result['error-codes']) : 'Unknown error';
+            $response['message'] = "Verificación reCAPTCHA fallida. Errores: " . $error_codes;
             echo json_encode($response);
             die();
         }
@@ -121,5 +187,20 @@ header('Content-Type: application/json');
         echo json_encode($response);
         die();
     }
+    
+} catch (Throwable $e) {
+    // Catch any fatal errors or exceptions
+    $error_response = [
+        'message' => "Error interno del servidor: " . $e->getMessage(),
+        'status' => "error",
+        'debug' => [
+            'file' => $e->getFile(),
+            'line' => $e->getLine(),
+            'trace' => $e->getTraceAsString()
+        ]
+    ];
+    echo json_encode($error_response);
+    error_log("Mailer Error: " . $e->getMessage() . " in " . $e->getFile() . " on line " . $e->getLine());
+}
     
 ?>
